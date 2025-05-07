@@ -25,49 +25,41 @@ Al termine di questo corso, si consiglia di proseguire con:
 In questo capitolo si introducono i concetti fondamentali dell'informatica: cosa sono i programmi, come funziona un computer e cosa significa programmare.  
 Viene introdotto l'ambiente Google Colab e scritto il primo semplice programma.
 
-<pre>
-Capitolo1_Introduzione/
-├── 0_Obiettivi_del_capitolo/
-│   └── <a href="https://colab.research.google.com/github/tuo-utente/corso-python-base/blob/main/Capitolo1_Introduzione/0_Obiettivi_del_capitolo/0_Obiettivi.ipynb" target="_blank">0_Obiettivi.ipynb</a>
-├── 1_Concetti_di_base/
-│   ├── <a href="https://colab.research.google.com/github/tuo-utente/corso-python-base/blob/main/Capitolo1_Introduzione/1_Concetti_di_base/0_Computer_e_programmi.ipynb" target="_blank">0_Computer_e_programmi.ipynb</a>
-│   ├── <a href="https://colab.research.google.com/github/tuo-utente/corso-python-base/blob/main/Capitolo1_Introduzione/1_Concetti_di_base/1_Programmi_e_dati.ipynb" target="_blank">1_Programmi_e_dati.ipynb</a>
-│   └── <a href="https://colab.research.google.com/github/tuo-utente/corso-python-base/blob/main/Capitolo1_Introduzione/1_Concetti_di_base/2_Software_vs_Hardware.ipynb" target="_blank">2_Software_vs_Hardware.ipynb</a>
-├── 2_Anatomia_del_computer/
-│   ├── <a href="https://colab.research.google.com/github/tuo-utente/corso-python-base/blob/main/Capitolo1_Introduzione/2_Anatomia_del_computer/0_CPU_RAM_Storage.ipynb" target="_blank">0_CPU_RAM_Storage.ipynb</a>
-│   ├── <a href="https://colab.research.google.com/github/tuo-utente/corso-python-base/blob/main/Capitolo1_Introduzione/2_Anatomia_del_computer/1_Input_output.ipynb" target="_blank">1_Input_output.ipynb</a>
-│   └── <a href="https://colab.research.google.com/github/tuo-utente/corso-python-base/blob/main/Capitolo1_Introduzione/2_Anatomia_del_computer/2_Architettura_di_base.ipynb" target="_blank">2_Architettura_di_base.ipynb</a>
-├── 3_Linguaggio_Python/
-│   ├── <a href="https://colab.research.google.com/github/tuo-utente/corso-python-base/blob/main/Capitolo1_Introduzione/3_Linguaggio_Python/0_Storia_e_caratteristiche.ipynb" target="_blank">0_Storia_e_caratteristiche.ipynb</a>
-│   ├── <a href="https://colab.research.google.com/github/tuo-utente/corso-python-base/blob/main/Capitolo1_Introduzione/3_Linguaggio_Python/1_Perche_usare_Python.ipynb" target="_blank">1_Perche_usare_Python.ipynb</a>
-│   └── <a href="https://colab.research.google.com/github/tuo-utente/corso-python-base/blob/main/Capitolo1_Introduzione/3_Linguaggio_Python/2_Primo_script_in_colab.ipynb" target="_blank">2_Primo_script_in_colab.ipynb</a>
-├── 4_Google_Colab/
-│   ├── <a href="https://colab.research.google.com/github/tuo-utente/corso-python-base/blob/main/Capitolo1_Introduzione/4_Google_Colab/0_Cos_e_Colab.ipynb" target="_blank">0_Cos_e_Colab.ipynb</a>
-│   ├── <a href="https://colab.research.google.com/github/tuo-utente/corso-python-base/blob/main/Capitolo1_Introduzione/4_Google_Colab/1_Usare_Colab_per_Python.ipynb" target="_blank">1_Usare_Colab_per_Python.ipynb</a>
-│   └── <a href="https://colab.research.google.com/github/tuo-utente/corso-python-base/blob/main/Capitolo1_Introduzione/4_Google_Colab/2_Tips_utili_in_Colab.ipynb" target="_blank">2_Tips_utili_in_Colab.ipynb</a>
-├── 5_Ambiente_di_programmazione/
-│   ├── <a href="https://colab.research.google.com/github/tuo-utente/corso-python-base/blob/main/Capitolo1_Introduzione/5_Ambiente_di_programmazione/0_IDE_vs_Editor.ipynb" target="_blank">0_IDE_vs_Editor.ipynb</a>
-│   ├── <a href="https://colab.research.google.com/github/tuo-utente/corso-python-base/blob/main/Capitolo1_Introduzione/5_Ambiente_di_programmazione/1_Editor_online_vs_locale.ipynb" target="_blank">1_Editor_online_vs_locale.ipynb</a>
-│   └── <a href="https://colab.research.google.com/github/tuo-utente/corso-python-base/blob/main/Capitolo1_Introduzione/5_Ambiente_di_programmazione/2_Colab_vs_Thonny_vs_VSCode.ipynb" target="_blank">2_Colab_vs_Thonny_vs_VSCode.ipynb</a>
-├── 6_Primo_programma/
-│   ├── <a href="https://colab.research.google.com/github/tuo-utente/corso-python-base/blob/main/Capitolo1_Introduzione/6_Primo_programma/0_Hello_world.ipynb" target="_blank">0_Hello_world.ipynb</a>
-│   ├── <a href="https://colab.research.google.com/github/tuo-utente/corso-python-base/blob/main/Capitolo1_Introduzione/6_Primo_programma/1_Input_output_base.ipynb" target="_blank">1_Input_output_base.ipynb</a>
-│   └── <a href="https://colab.research.google.com/github/tuo-utente/corso-python-base/blob/main/Capitolo1_Introduzione/6_Primo_programma/2_Commenti_e_stile.ipynb" target="_blank">2_Commenti_e_stile.ipynb</a>
-├── 7_Errori_comuni/
-│   ├── <a href="https://colab.research.google.com/github/tuo-utente/corso-python-base/blob/main/Capitolo1_Introduzione/7_Errori_comuni/0_Errori_sintassi.ipynb" target="_blank">0_Errori_sintassi.ipynb</a>
-│   ├── <a href="https://colab.research.google.com/github/tuo-utente/corso-python-base/blob/main/Capitolo1_Introduzione/7_Errori_comuni/1_Errori_logici.ipynb" target="_blank">1_Errori_logici.ipynb</a>
-│   └── <a href="https://colab.research.google.com/github/tuo-utente/corso-python-base/blob/main/Capitolo1_Introduzione/7_Errori_comuni/2_Debug_in_Colab.ipynb" target="_blank">2_Debug_in_Colab.ipynb</a>
-├── 8_Pensiero_computazionale/
-│   ├── <a href="https://colab.research.google.com/github/tuo-utente/corso-python-base/blob/main/Capitolo1_Introduzione/8_Pensiero_computazionale/0_Problem_solving.ipynb" target="_blank">0_Problem_solving.ipynb</a>
-│   ├── <a href="https://colab.research.google.com/github/tuo-utente/corso-python-base/blob/main/Capitolo1_Introduzione/8_Pensiero_computazionale/1_Algoritmi_base.ipynb" target="_blank">1_Algoritmi_base.ipynb</a>
-│   └── <a href="https://colab.research.google.com/github/tuo-utente/corso-python-base/blob/main/Capitolo1_Introduzione/8_Pensiero_computazionale/2_Pseudocodice.ipynb" target="_blank">2_Pseudocodice.ipynb</a>
-├── 9_Esercizi/
-│   ├── <a href="https://colab.research.google.com/github/tuo-utente/corso-python-base/blob/main/Capitolo1_Introduzione/9_Esercizi/0_Esercizi_di_ripasso.ipynb" target="_blank">0_Esercizi_di_ripasso.ipynb</a>
-│   ├── <a href="https://colab.research.google.com/github/tuo-utente/corso-python-base/blob/main/Capitolo1_Introduzione/9_Esercizi/1_Esercizi_di_programmazione.ipynb" target="_blank">1_Esercizi_di_programmazione.ipynb</a>
-│   └── <a href="https://colab.research.google.com/github/tuo-utente/corso-python-base/blob/main/Capitolo1_Introduzione/9_Esercizi/2_Soluzioni_commentate.ipynb" target="_blank">2_Soluzioni_commentate.ipynb</a>
-└── 10_Auto_valutazione/
-    └── <a href="https://colab.research.google.com/github/tuo-utente/corso-python-base/blob/main/Capitolo1_Introduzione/10_Auto_valutazione/0_Risposte.ipynb" target="_blank">0_Risposte.ipynb</a>
-</pre>
+%%markdown
+
+### Capitolo 1 – Introduzione
+
+| Sezione | Notebook | Link |
+|--------|----------|------|
+| Obiettivi del capitolo | 0_Obiettivi.ipynb | [Apri](https://colab.research.google.com/github/tuo-utente/corso-python-base/blob/main/Capitolo1_Introduzione/0_Obiettivi_del_capitolo/0_Obiettivi.ipynb) |
+| Concetti di base | 0_Computer_e_programmi.ipynb | [Apri](https://colab.research.google.com/github/tuo-utente/corso-python-base/blob/main/Capitolo1_Introduzione/1_Concetti_di_base/0_Computer_e_programmi.ipynb) |
+|  | 1_Programmi_e_dati.ipynb | [Apri](https://colab.research.google.com/github/tuo-utente/corso-python-base/blob/main/Capitolo1_Introduzione/1_Concetti_di_base/1_Programmi_e_dati.ipynb) |
+|  | 2_Software_vs_Hardware.ipynb | [Apri](https://colab.research.google.com/github/tuo-utente/corso-python-base/blob/main/Capitolo1_Introduzione/1_Concetti_di_base/2_Software_vs_Hardware.ipynb) |
+| Anatomia del computer | 0_CPU_RAM_Storage.ipynb | [Apri](https://colab.research.google.com/github/tuo-utente/corso-python-base/blob/main/Capitolo1_Introduzione/2_Anatomia_del_computer/0_CPU_RAM_Storage.ipynb) |
+|  | 1_Input_output.ipynb | [Apri](https://colab.research.google.com/github/tuo-utente/corso-python-base/blob/main/Capitolo1_Introduzione/2_Anatomia_del_computer/1_Input_output.ipynb) |
+|  | 2_Architettura_di_base.ipynb | [Apri](https://colab.research.google.com/github/tuo-utente/corso-python-base/blob/main/Capitolo1_Introduzione/2_Anatomia_del_computer/2_Architettura_di_base.ipynb) |
+| Linguaggio Python | 0_Storia_e_caratteristiche.ipynb | [Apri](https://colab.research.google.com/github/tuo-utente/corso-python-base/blob/main/Capitolo1_Introduzione/3_Linguaggio_Python/0_Storia_e_caratteristiche.ipynb) |
+|  | 1_Perche_usare_Python.ipynb | [Apri](https://colab.research.google.com/github/tuo-utente/corso-python-base/blob/main/Capitolo1_Introduzione/3_Linguaggio_Python/1_Perche_usare_Python.ipynb) |
+|  | 2_Primo_script_in_colab.ipynb | [Apri](https://colab.research.google.com/github/tuo-utente/corso-python-base/blob/main/Capitolo1_Introduzione/3_Linguaggio_Python/2_Primo_script_in_colab.ipynb) |
+| Google Colab | 0_Cos_e_Colab.ipynb | [Apri](https://colab.research.google.com/github/tuo-utente/corso-python-base/blob/main/Capitolo1_Introduzione/4_Google_Colab/0_Cos_e_Colab.ipynb) |
+|  | 1_Usare_Colab_per_Python.ipynb | [Apri](https://colab.research.google.com/github/tuo-utente/corso-python-base/blob/main/Capitolo1_Introduzione/4_Google_Colab/1_Usare_Colab_per_Python.ipynb) |
+|  | 2_Tips_utili_in_Colab.ipynb | [Apri](https://colab.research.google.com/github/tuo-utente/corso-python-base/blob/main/Capitolo1_Introduzione/4_Google_Colab/2_Tips_utili_in_Colab.ipynb) |
+| Ambiente di programmazione | 0_IDE_vs_Editor.ipynb | [Apri](https://colab.research.google.com/github/tuo-utente/corso-python-base/blob/main/Capitolo1_Introduzione/5_Ambiente_di_programmazione/0_IDE_vs_Editor.ipynb) |
+|  | 1_Editor_online_vs_locale.ipynb | [Apri](https://colab.research.google.com/github/tuo-utente/corso-python-base/blob/main/Capitolo1_Introduzione/5_Ambiente_di_programmazione/1_Editor_online_vs_locale.ipynb) |
+|  | 2_Colab_vs_Thonny_vs_VSCode.ipynb | [Apri](https://colab.research.google.com/github/tuo-utente/corso-python-base/blob/main/Capitolo1_Introduzione/5_Ambiente_di_programmazione/2_Colab_vs_Thonny_vs_VSCode.ipynb) |
+| Primo programma | 0_Hello_world.ipynb | [Apri](https://colab.research.google.com/github/tuo-utente/corso-python-base/blob/main/Capitolo1_Introduzione/6_Primo_programma/0_Hello_world.ipynb) |
+|  | 1_Input_output_base.ipynb | [Apri](https://colab.research.google.com/github/tuo-utente/corso-python-base/blob/main/Capitolo1_Introduzione/6_Primo_programma/1_Input_output_base.ipynb) |
+|  | 2_Commenti_e_stile.ipynb | [Apri](https://colab.research.google.com/github/tuo-utente/corso-python-base/blob/main/Capitolo1_Introduzione/6_Primo_programma/2_Commenti_e_stile.ipynb) |
+| Errori comuni | 0_Errori_sintassi.ipynb | [Apri](https://colab.research.google.com/github/tuo-utente/corso-python-base/blob/main/Capitolo1_Introduzione/7_Errori_comuni/0_Errori_sintassi.ipynb) |
+|  | 1_Errori_logici.ipynb | [Apri](https://colab.research.google.com/github/tuo-utente/corso-python-base/blob/main/Capitolo1_Introduzione/7_Errori_comuni/1_Errori_logici.ipynb) |
+|  | 2_Debug_in_Colab.ipynb | [Apri](https://colab.research.google.com/github/tuo-utente/corso-python-base/blob/main/Capitolo1_Introduzione/7_Errori_comuni/2_Debug_in_Colab.ipynb) |
+| Pensiero computazionale | 0_Problem_solving.ipynb | [Apri](https://colab.research.google.com/github/tuo-utente/corso-python-base/blob/main/Capitolo1_Introduzione/8_Pensiero_computazionale/0_Problem_solving.ipynb) |
+|  | 1_Algoritmi_base.ipynb | [Apri](https://colab.research.google.com/github/tuo-utente/corso-python-base/blob/main/Capitolo1_Introduzione/8_Pensiero_computazionale/1_Algoritmi_base.ipynb) |
+|  | 2_Pseudocodice.ipynb | [Apri](https://colab.research.google.com/github/tuo-utente/corso-python-base/blob/main/Capitolo1_Introduzione/8_Pensiero_computazionale/2_Pseudocodice.ipynb) |
+| Esercizi | 0_Esercizi_di_ripasso.ipynb | [Apri](https://colab.research.google.com/github/tuo-utente/corso-python-base/blob/main/Capitolo1_Introduzione/9_Esercizi/0_Esercizi_di_ripasso.ipynb) |
+|  | 1_Esercizi_di_programmazione.ipynb | [Apri](https://colab.research.google.com/github/tuo-utente/corso-python-base/blob/main/Capitolo1_Introduzione/9_Esercizi/1_Esercizi_di_programmazione.ipynb) |
+|  | 2_Soluzioni_commentate.ipynb | [Apri](https://colab.research.google.com/github/tuo-utente/corso-python-base/blob/main/Capitolo1_Introduzione/9_Esercizi/2_Soluzioni_commentate.ipynb) |
+| Auto-valutazione | 0_Risposte.ipynb | [Apri](https://colab.research.google.com/github/tuo-utente/corso-python-base/blob/main/Capitolo1_Introduzione/10_Auto_valutazione/0_Risposte.ipynb) |
 
 **🎯 Obiettivo del Capitolo:**  
 Comprendere la struttura di base di un computer, i concetti base della programmazione e scrivere semplici script Python in Colab.
