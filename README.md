@@ -1,4 +1,4 @@
-# 🐍 Programmazione in Python - Base
+# Programmazione in Python - Base 🐍
 
 ## Introduzione
 Questo corso introduce i concetti fondamentali della programmazione utilizzando il linguaggio Python, con un approccio pratico ed educativo, pensato per chi parte da zero.
@@ -24,8 +24,6 @@ Al termine di questo corso, si consiglia di proseguire con:
 
 In questo capitolo si introducono i concetti fondamentali dell'informatica: cosa sono i programmi, come funziona un computer e cosa significa programmare.  
 Viene introdotto l'ambiente Google Colab e scritto il primo semplice programma.
-
-%%markdown
 
 ### Capitolo 1 – Introduzione
 
