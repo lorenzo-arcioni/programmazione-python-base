@@ -8,7 +8,7 @@ Questo corso è progettato per guidarvi passo dopo passo nell'apprendimento dei 
 
 | Capitolo | Titolo                          | Argomenti Chiave                                                                 | Link                                                                 |
 |----------|---------------------------------|----------------------------------------------------------------------------------|----------------------------------------------------------------------|
-| 1        | Introduzione                    | Ambiente sviluppo, Primo programma, Debugging                                    | [Vai ➔](#capitolo-1---introduzione)                                |
+| 1        | Introduzione                    | Ambiente sviluppo, Primo programma, Debugging                                    | [Vai ➔](#-capitolo-1---introduzione)                                |
 | 2        | Numeri e Stringhe               | Operazioni base, F-strings, Mutabilità                                           | [Vai ➔](#-capitolo-2---numeri-e-stringhe)                          |
 | 3        | Decisioni                       | Strutture condizionali, Regex, Gestione input                                    | [Vai ➔](#-capitolo-3---decisioni)                                  |
 | 4        | Cicli                          | While/For, Enumerate/Zip, Cicli annidati                                         | [Vai ➔](#-capitolo-4---cicli)                                     |
