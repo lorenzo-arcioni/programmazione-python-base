@@ -8,20 +8,20 @@ Questo corso è progettato per guidarvi passo dopo passo nell'apprendimento dei 
 
 | Capitolo | Titolo                          | Argomenti Chiave                                                                 | Link                                                                 |
 |----------|---------------------------------|----------------------------------------------------------------------------------|----------------------------------------------------------------------|
-| 1        | Introduzione                    | Ambiente sviluppo, Primo programma, Debugging                                    | [Vai al capitolo ➔](#capitolo-1---introduzione)                     |
-| 2        | Numeri e Stringhe               | Operazioni base, F-strings, Mutabilità                                           | [Vai al capitolo ➔](#capitolo-2---numeri-e-stringhe)                |
-| 3        | Decisioni                       | Strutture condizionali, Regex, Gestione input                                    | [Vai al capitolo ➔](#capitolo-3---decisioni)                        |
-| 4        | Cicli                          | While/For, Enumerate/Zip, Cicli annidati                                         | [Vai al capitolo ➔](#capitolo-4---cicli)                           |
-| 5        | Funzioni                       | Parametri, Scope, Lambda functions                                               | [Vai al capitolo ➔](#capitolo-5---funzioni)                        |
-| 6        | Liste                          | List comprehension, Tuple, Tabelle                                               | [Vai al capitolo ➔](#capitolo-6---liste)                           |
-| 7        | Gestione Eccezioni             | Try/Except/Finally, Eccezioni personalizzate                                     | [Vai al capitolo ➔](#capitolo-7---gestione-delle-eccezioni)         |
-| 8        | File e Formati Dati            | CSV, JSON, Context manager                                                       | [Vai al capitolo ➔](#capitolo-8---file-e-formati-dati)             |
-| 9        | Insiemi e Dizionari            | Operazioni su set, Dict comprehension                                            | [Vai al capitolo ➔](#capitolo-9--insiemi-e-dizionari)              |
-| 10       | Oggetti e Classi               | OOP base, Ereditarietà, Decoratori                                               | [Vai al capitolo ➔](#capitolo-10--oggetti-e-classi)                |
-| 11       | Ereditarietà                   | Polimorfismo, Classi astratte, Design pattern                                     | [Vai al capitolo ➔](#capitolo-11--ereditarietà)                    |
-| 12       | Ricorsione                     | Backtracking, Memoizzazione, Divide et impera                                     | [Vai al capitolo ➔](#capitolo-12--ricorsione)                      |
-| 13       | Ordinamento e Ricerca          | Merge sort, Ricerca binaria, Analisi prestazioni                                  | [Vai al capitolo ➔](#capitolo-13--ordinamento-e-ricerca)           |
-| 14       | Librerie Standard Avanzate     | Math/Datetime, OS/Sys, Argparse                                                  | [Vai al capitolo ➔](#capitolo-14---librerie-standard-avanzate)     |
+| 1        | Introduzione                    | Ambiente sviluppo, Primo programma, Debugging                                    | [Vai ➔](#capitolo-1---introduzione)                                |
+| 2        | Numeri e Stringhe               | Operazioni base, F-strings, Mutabilità                                           | [Vai ➔](#-capitolo-2---numeri-e-stringhe)                          |
+| 3        | Decisioni                       | Strutture condizionali, Regex, Gestione input                                    | [Vai ➔](#-capitolo-3---decisioni)                                  |
+| 4        | Cicli                          | While/For, Enumerate/Zip, Cicli annidati                                         | [Vai ➔](#-capitolo-4---cicli)                                     |
+| 5        | Funzioni                       | Parametri, Scope, Lambda functions                                               | [Vai ➔](#-capitolo-5---funzioni)                                  |
+| 6        | Liste                          | List comprehension, Tuple, Tabelle                                               | [Vai ➔](#-capitolo-6---liste)                                     |
+| 7        | Gestione Eccezioni             | Try/Except/Finally, Eccezioni personalizzate                                     | [Vai ➔](#-capitolo-7---gestione-delle-eccezioni)                   |
+| 8        | File e Formati Dati            | CSV, JSON, Context manager                                                       | [Vai ➔](#-capitolo-8---file-e-formati-dati)                       |
+| 9        | Insiemi e Dizionari            | Operazioni su set, Dict comprehension                                            | [Vai ➔](#-capitolo-9--insiemi-e-dizionari)                        |
+| 10       | Oggetti e Classi               | OOP base, Ereditarietà, Decoratori                                               | [Vai ➔](#-capitolo-10--oggetti-e-classi)                          |
+| 11       | Ereditarietà                   | Polimorfismo, Classi astratte, Design pattern                                     | [Vai ➔](#-capitolo-11--ereditarietà)                              |
+| 12       | Ricorsione                     | Backtracking, Memoizzazione, Divide et impera                                     | [Vai ➔](#-capitolo-12--ricorsione)                                |
+| 13       | Ordinamento e Ricerca          | Merge sort, Ricerca binaria, Analisi prestazioni                                  | [Vai ➔](#-capitolo-13--ordinamento-e-ricerca)                     |
+| 14       | Librerie Standard Avanzate     | Math/Datetime, OS/Sys, Argparse                                                  | [Vai ➔](#-capitolo-14---librerie-standard-avanzate)               |
 
 *🔍 Utilizza i link per navigare rapidamente agli argomenti di interesse*
 
