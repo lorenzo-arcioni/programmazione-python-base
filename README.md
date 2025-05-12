@@ -57,10 +57,11 @@ Immergiti in un percorso strutturato che trasformerà il tuo approccio alla prog
 - **Community attiva** per collaborazioni e hackathon 👥  
 
 **Perché scegliere questo corso?**
+
 ✅ **Project-Based Learning**: Ogni capitolo si conclude con un mini-progetto pratico  
-✅ **Esercizi interattivi** con correzione automatica e feedback diretto dal docente 
+✅ **Esercizi interattivi** con correzione automatica e feedback diretto dal docente  
 ✅ **Supporto 1:1** tramite ambiente virtuale dedicato per dubbi tecnici  
-✅ **Aggiornamenti gratuiti** a vita su nuovi contenuti e tecnologie
+✅ **Aggiornamenti gratuiti** a vita su nuovi contenuti e tecnologie  
 ✅ **Lingua Italiana 🇮🇹**: L'intero corso è erogato interamente in lingua Italiana, il che non è poco!
 
 **Trasforma le tue idee in codice... e il codice in carriera!** 🚀 
@@ -489,7 +490,35 @@ Padroneggiare l'uso di librerie specializzate per risolvere problemi complessi, 
 - Creare programmi con interfaccia a riga di comando professionale  
 - Gestire parametri flessibili nelle funzioni con **kwargs  
 - Comprimere/decomprimere file in diversi formati  
-- Integrare multiplie librerie per soluzioni ibride  
+- Integrare multiplie librerie per soluzioni ibride
+
+## Come usare il correttore automatico 🧪
+
+Per ogni esercizio, dovrai scrivere il codice all’interno del file `main.py`.
+
+Il file `test.py` si occupa di verificare automaticamente che le soluzioni siano corrette. Puoi eseguire il test così:
+
+```python
+python test.py
+```
+
+🔁 Se invece vuoi testare le **soluzioni proposte**, esegui:
+
+```python
+python test.py -s
+```
+
+📌 Durante l’esecuzione:
+- Il correttore **nasconde l’output del tuo script** (es. eventuali `print()`).
+- Ogni test superato viene indicato con `[OK]` in verde.
+- In caso di errore, viene mostrato un messaggio ❌.
+
+💡 Consiglio: prima di eseguire il test verifica il funzionamento del tuo script con:
+
+```python
+python main.py
+```
+In questo modo ti sarà più facile risolvere eventuali errori.
 
 ## Progetti pratici 🛠️
 Qui trovi una selezione di progetti interattivi per mettere in pratica le tue abilità:
