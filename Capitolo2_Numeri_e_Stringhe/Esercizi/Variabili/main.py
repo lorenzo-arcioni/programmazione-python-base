@@ -23,5 +23,5 @@
 
 # Esercizio 9: Stampa l'id (identificatore di memoria) della variabile dell’esercizio 1
 
-# Esercizio 10: Verifica se due interi con stesso valore sono == e is, stampando il risultato. I due interi devono però essere creati con la funzione int().
+# Esercizio 10: Verifica se due interi con stesso valore sono == e is, stampando il risultato. I due interi devono però essere creati con il casting da stringa ad intero.
 # Hint. x = int("6")
