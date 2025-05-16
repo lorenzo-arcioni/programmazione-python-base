@@ -8,7 +8,7 @@ b = 3.14
 c = True
 
 # Esercizio 4
-d = "ciao"
+D = "ciao"
 
 # Esercizio 5
 e = None

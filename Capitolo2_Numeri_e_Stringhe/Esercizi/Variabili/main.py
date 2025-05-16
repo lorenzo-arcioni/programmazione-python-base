@@ -7,8 +7,8 @@
 # Esercizio 3: Crea una variabile booleana con valore True
 # Nome variabile: c
 
-# Esercizio 4: Crea una variabile stringa con valore "ciao"
-# Nome variabile: d
+# Esercizio 4: Crea una costante stringa con valore "ciao"
+# Nome costante: D
 
 # Esercizio 5: Crea una variabile che rappresenta l’assenza di valore
 # Nome variabile: e

@@ -47,7 +47,7 @@ def check(name, expected_type, expected_value=Ellipsis):
 check('a', int, 42)
 check('b', float, 3.14)
 check('c', bool, True)
-check('d', str, "ciao")
+check('D', str, "ciao")
 check('e', type(None), None)
 check('f', complex, 2 + 3j)
 check('g', bytes, b"hello")
