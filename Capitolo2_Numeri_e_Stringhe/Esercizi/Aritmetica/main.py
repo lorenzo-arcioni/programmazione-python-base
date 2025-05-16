@@ -1,4 +1,5 @@
 # Esercizio 1: Calcola la media aritmetica di tre numeri interi
+
 a = 4
 b = 10
 c = 6
