@@ -49,7 +49,7 @@ testo_pulito_11 = testo_originale_11.strip()
 # Esercizio 12: Conta le occorrenze di una lettera in una stringa
 # Conta quante volte appare la lettera 'a' nella frase
 frase_12 = "La programmazione è fantastica"
-conta_a_12 = frase_12.lower().count('a')
+conta_a_12 = frase_12.count('a')
 
 # Esercizio 13: Verifica se una stringa inizia e finisce con caratteri specifici
 # Verifica se la stringa inizia con "Py" e finisce con "on"
@@ -74,6 +74,7 @@ posizione_pro_16 = testo_16.find("pro")
 
 # Esercizio 17: Crea un acronimo dalle iniziali delle parole
 # Da "Artificial Intelligence" crea "AI"
+# Hint: Utilizza un ciclo for in combianzione con la funzione join
 frase_17 = "Artificial Intelligence"
 acronimo_17 = ''.join([parola[0] for parola in frase_17.split()])
 

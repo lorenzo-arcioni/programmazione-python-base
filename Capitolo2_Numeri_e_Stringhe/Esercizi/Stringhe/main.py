@@ -87,6 +87,7 @@ posizione_pro_16 = ...
 
 # Esercizio 17: Crea un acronimo dalle iniziali delle parole
 # Da "Artificial Intelligence" crea "AI"
+# Hint: Utilizza un ciclo for in combianzione con la funzione join
 frase_17 = "Artificial Intelligence"
 acronimo_17 = ...
 
