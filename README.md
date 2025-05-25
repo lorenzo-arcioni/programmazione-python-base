@@ -116,20 +116,19 @@ Si impara a gestire l’input/output e si toccano i primi concetti di grafica e 
 | Variabili                   | 1_Variabili.ipynb                                                            | [1_Variabili.ipynb](https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo2_Numeri_e_Stringhe/1_Variabili.ipynb) |
 | Aritmetica                  | 2_Aritmetica.ipynb                                                           | [2_Aritmetica.ipynb](https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo2_Numeri_e_Stringhe/2_Aritmetica.ipynb) |
 | Stringhe                    | 3_Stringhe.ipynb                                                             | [3_Stringhe.ipynb](https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo2_Numeri_e_Stringhe/3_Stringhe.ipynb) |
-| Formattazione avanzata      | 4_F_Strings.ipynb                                                            | [4_F_Strings.ipynb](https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo2_Numeri_e_Stringhe/4_F_Strings.ipynb) |
-| Mutabile vs Immutabile      | 5_Mutabilita.ipynb                                                           | [5_Mutabilita.ipynb](https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo2_Numeri_e_Stringhe/5_Mutabilita.ipynb) |
-| Input/Output                | 6_Input_output.ipynb                                                         | [6_Input_output.ipynb](https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo2_Numeri_e_Stringhe/6_Input_output.ipynb) |
-| Grafica Intro               | 7_Grafica_intro.ipynb                                                        | [7_Grafica_intro.ipynb](https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo2_Numeri_e_Stringhe/7_Grafica_intro.ipynb) |
-| Operazioni Miste            | 8_Operazioni_miste.ipynb                                                     | [8_Operazioni_miste.ipynb](https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo2_Numeri_e_Stringhe/8_Operazioni_miste.ipynb) |
-| Algoritmi Base              | 9_Algoritmi_base.ipynb                                                       | [9_Algoritmi_base.ipynb](https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo2_Numeri_e_Stringhe/9_Algoritmi_base.ipynb) |
-| Best Practices              | 10_Best_practices.ipynb                                                      | [10_Best_practices.ipynb](https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo2_Numeri_e_Stringhe/10_Best_practices.ipynb) |
-| Esercizi                    | 11_Esercizi.ipynb                                                            | [11_Esercizi.ipynb](https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo2_Numeri_e_Stringhe/11_Esercizi.ipynb) |
-| Auto-valutazione            | 12_Auto_valutazione.ipynb                                                    | [12_Auto_valutazione.ipynb](https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo2_Numeri_e_Stringhe/12_Auto_valutazione.ipynb) |
+| Input/Output                | 6_Input_output.ipynb                                                         | [4_Input_e_Output.ipynb](https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo2_Numeri_e_Stringhe/6_Input_e_Output.ipynb) |
+| Grafica Intro               | 7_Grafica_intro.ipynb                                                        | [5_Grafica_intro.ipynb](https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo2_Numeri_e_Stringhe/7_Grafica_intro.ipynb) |
+| Algoritmi Base              | 9_Algoritmi_base.ipynb                                                       | [6_Algoritmi_base.ipynb](https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo2_Numeri_e_Stringhe/9_Algoritmi_base.ipynb) |
+| Best Practices              | 10_Best_practices.ipynb                                                      | [7_Best_practices.ipynb](https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo2_Numeri_e_Stringhe/10_Best_practices.ipynb) |
+| Esercizi                    | 11_Esercizi.ipynb                                                            | [8_Esercizi.ipynb](https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo2_Numeri_e_Stringhe/11_Esercizi.ipynb) |
 
 **🎯 Obiettivo del Capitolo:**  
 Padroneggiare variabili, operazioni aritmetiche, manipolazione avanzata di stringhe e comprendere la natura mutabile/immutabile dei tipi di dati.
 
-**Alla fine del capitolo lo studente sarà in grado di**:  
+**Alla fine del capitolo lo studente sarà in grado di**:
+- Utilizzare le variabili per memorizzare dati
+- Utilizzare operazioni aritmetiche per manipolare dati numerici
+- Utilizzare e manipolare stringhe per rappresentare e gestire testi  
 - Utilizzare f-string per formattazione avanzata  
 - Distinguere tra oggetti mutabili e immutabili  
 - Progettare algoritmi con operazioni miste numeriche/stringhe  
