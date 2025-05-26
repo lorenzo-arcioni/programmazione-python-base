@@ -4,24 +4,26 @@
 🚀 **Benvenuti nel mondo della programmazione con Python!**  
 Questo corso è progettato per guidarvi passo dopo passo nell'apprendimento dei concetti fondamentali della programmazione, tramite l'utilizzo di Python: il linguaggio di programmazione più popolare e potente del mondo. Che siate alle prime armi o vogliate consolidare le basi, qui troverete un mix perfetto di teoria e pratica, arricchito da esempi concreti e progetti stimolanti. Preparatevi a trasformare le vostre idee in codice! 💻✨
 
-## Programma del Corso
+## 📚 Programma del Corso
 
-| Capitolo | Titolo                          | Argomenti Chiave                                                                 | Link                                                                 |
-|----------|---------------------------------|----------------------------------------------------------------------------------|----------------------------------------------------------------------|
-| 1        | Introduzione                    | Ambiente sviluppo, Primo programma, Debugging                                    | [Vai ➔](#-capitolo-1---introduzione)                                |
-| 2        | Numeri e Stringhe               | Operazioni base, F-strings, Mutabilità                                           | [Vai ➔](#-capitolo-2---numeri-e-stringhe)                          |
-| 3        | Decisioni                       | Strutture condizionali, Regex, Gestione input                                    | [Vai ➔](#-capitolo-3---decisioni)                                  |
-| 4        | Cicli                          | While/For, Enumerate/Zip, Cicli annidati                                         | [Vai ➔](#-capitolo-4---cicli)                                     |
-| 5        | Funzioni                       | Parametri, Scope, Lambda functions                                               | [Vai ➔](#-capitolo-5---funzioni)                                  |
-| 6        | Liste                          | List comprehension, Tuple, Tabelle                                               | [Vai ➔](#-capitolo-6---liste)                                     |
-| 7        | Gestione Eccezioni             | Try/Except/Finally, Eccezioni personalizzate                                     | [Vai ➔](#-capitolo-7---gestione-delle-eccezioni)                   |
-| 8        | File e Formati Dati            | CSV, JSON, Context manager                                                       | [Vai ➔](#-capitolo-8---file-e-formati-dati)                       |
-| 9        | Insiemi e Dizionari            | Operazioni su set, Dict comprehension                                            | [Vai ➔](#-capitolo-9--insiemi-e-dizionari)                        |
-| 10       | Oggetti e Classi               | OOP base, Ereditarietà, Decoratori                                               | [Vai ➔](#-capitolo-10--oggetti-e-classi)                          |
-| 11       | Ereditarietà                   | Polimorfismo, Classi astratte, Design pattern                                     | [Vai ➔](#-capitolo-11--ereditarietà)                              |
-| 12       | Ricorsione                     | Backtracking, Memoizzazione, Divide et impera                                     | [Vai ➔](#-capitolo-12--ricorsione)                                |
-| 13       | Ordinamento e Ricerca          | Merge sort, Ricerca binaria, Analisi prestazioni                                  | [Vai ➔](#-capitolo-13--ordinamento-e-ricerca)                     |
-| 14       | Librerie Standard Avanzate     | Math/Datetime, OS/Sys, Argparse                                                  | [Vai ➔](#-capitolo-14---librerie-standard-avanzate)               |
+| Capitolo | Titolo                       | Argomenti Chiave                                                               | Link                                                                 |
+|----------|------------------------------|--------------------------------------------------------------------------------|----------------------------------------------------------------------|
+| 1        | Introduzione                 | Ambiente di sviluppo, primo programma, debugging                               | [Vai ➔](#-capitolo-1---introduzione)                                |
+| 2        | Numeri e Stringhe            | Operazioni base, F-strings, mutabilità                                         | [Vai ➔](#-capitolo-2---numeri-e-stringhe)                           |
+| 3        | Decisioni                    | Strutture condizionali, regex, gestione input                                  | [Vai ➔](#-capitolo-3---decisioni)                                   |
+| 4        | Cicli                        | `while`, `for`, `enumerate`, `zip`, cicli annidati                             | [Vai ➔](#-capitolo-4---cicli)                                       |
+| 5        | Funzioni                     | Parametri, scope, lambda functions                                             | [Vai ➔](#-capitolo-5---funzioni)                                    |
+| 6        | Liste                        | List comprehension, tuple, tabelle                                             | [Vai ➔](#-capitolo-6---liste)                                       |
+| 7        | Insiemi e Dizionari          | Operazioni su `set`, `dict`, comprehension                                     | [Vai ➔](#-capitolo-7---insiemi-e-dizionari)                         |
+| 8        | Gestione Eccezioni           | `try/except/finally`, eccezioni personalizzate                                 | [Vai ➔](#-capitolo-8---gestione-eccezioni)                          |
+| 9        | File e Formati Dati          | Lettura/scrittura file, `CSV`, `JSON`, context manager                         | [Vai ➔](#-capitolo-9---file-e-formati-dati)                         |
+| 10       | Oggetti e Classi             | OOP base, costruttore, metodi, decoratori                                      | [Vai ➔](#-capitolo-10---oggetti-e-classi)                           |
+| 11       | Ereditarietà                 | Ereditarietà, polimorfismo, classi astratte, design pattern                    | [Vai ➔](#-capitolo-11---ereditarietà)                              |
+| 12       | Ricorsione                   | Concetti base, backtracking, memoizzazione, divide et impera                   | [Vai ➔](#-capitolo-12---ricorsione)                                 |
+| 13       | Ordinamento e Ricerca        | Algoritmi di ordinamento, ricerca binaria, analisi delle prestazioni          | [Vai ➔](#-capitolo-13---ordinamento-e-ricerca)                      |
+| 14       | Librerie Standard Avanzate   | `math`, `datetime`, `os`, `sys`, `argparse`                                    | [Vai ➔](#-capitolo-14---librerie-standard-avanzate)                |
+| 15       | Progetti Pratici             | Progetto finale, documentazione, test, versione, deploy                       | [Vai ➔](#-capitolo-15---progetti-pratici)                            |
+
 
 *🔍 Utilizza i link per navigare rapidamente agli argomenti di interesse*
 
@@ -29,19 +31,77 @@ Questo corso è progettato per guidarvi passo dopo passo nell'apprendimento dei 
 Immergiti in un percorso strutturato che trasformerà il tuo approccio alla programmazione. Ecco cosa **dominerai**:
 
 ### 🧩 Fondamenti della Programmazione  
-- **Variabili e tipi di dati**: Gestisci numeri, stringhe, booleani e tante altre tipologie di dato.  
-- **Controllo del flusso**: Costruisci logiche di controllo con `if/elif/else`, cicli `while` e `for`, e tanto altro.
-- - **Strutture dati avanzate**: Liste, dizionari, tuple e insiemi per gestire informazioni complesse.
-- **Funzioni e moduli**: Organizza il codice in blocchi riutilizzabili e componibili utilizzando funzioni, oggetti e moduli.    
-- **Gestione degli errori**: Rendere i programmi robusti con `try/except` e eccezioni personalizzate.
+- **Variabili e tipi di dati**:  
+  - Assegna valori a variabili per salvare informazioni temporanee.  
+  - Lavora con numeri interi (int), decimali (float), testi (str), valori logici (bool) e tipi complessi come liste e dizionari.  
+  - Conosci le operazioni fondamentali su ciascun tipo (es. concatenazione per stringhe, somma per numeri, indexing per liste).  
+
+- **Controllo del flusso**:  
+  - Dirigi il comportamento del programma con strutture condizionali: if, elif, else.  
+  - Crea ripetizioni e automatismi con cicli while (condizione) e for (iterazione su sequenze).  
+  - Usa break e continue per controllare l'esecuzione all'interno dei cicli.  
+
+- **Strutture dati avanzate**:  
+  - **Liste** (list): contenitori ordinati e modificabili.  
+  - **Dizionari** (dict): associazioni chiave-valore ideali per accessi rapidi.  
+  - **Tuple** (tuple): simili alle liste ma immutabili.  
+  - **Insiemi** (set): collezioni non ordinate di elementi unici.  
+  - Utilizza queste strutture per organizzare e manipolare dati in modo efficiente.  
+
+- **Funzioni e moduli**:  
+  - Definisci funzioni con def per racchiudere codice riutilizzabile.  
+  - Passa parametri, restituisci risultati con return.  
+  - Importa moduli (import, from ... import) per sfruttare librerie esterne o organizzare meglio il codice.  
+  - Conosci la differenza tra variabili locali e globali, e l’uso del concetto di **scope** (ambito).  
+
+- **Gestione degli errori**:  
+  - Proteggi il programma dagli errori inaspettati con try/except.  
+  - Cattura errori specifici (ZeroDivisionError, ValueError, ecc.) per gestire comportamenti diversi.  
+  - Usa finally per eseguire codice indipendentemente dall’esito.  
+  - Crea eccezioni personalizzate per situazioni particolari con raise e classi derivate da Exception.  
+
+- **Programmazione a Oggetti (OOP)**:  
+  - Organizza il codice attorno a **oggetti**, che combinano **dati** (attributi) e **comportamenti** (metodi).  
+  - Crea nuove **classi** con la parola chiave class, e istanzia oggetti con la sintassi oggetto = NomeClasse().  
+  - Usa il metodo speciale __init__ per inizializzare gli oggetti.  
+  - Incapsula il comportamento all'interno di metodi (def) legati a una classe, utilizzando self per accedere agli attributi.  
+  - Applica concetti fondamentali come:  
+    - **Incapsulamento**: nascondi i dettagli interni e proteggi i dati.  
+    - **Ereditarietà**: crea nuove classi che riutilizzano codice da altre classi (class Figlia(Genitore):).  
+    - **Polimorfismo**: usa metodi con lo stesso nome su oggetti diversi che si comportano in modo coerente.  
+  - Favorisce la riusabilità, la chiarezza e la scalabilità del codice in progetti complessi.  
+
+- **Gestione dei file**:  
+  - Leggi e scrivi dati su file esterni per salvare o caricare informazioni persistenti.  
+  - Usa la funzione open() con modalità come 'r' (lettura), 'w' (scrittura), 'a' (aggiunta) e 'b' (binario).  
+  - Leggi i contenuti di un file con read(), readline() o readlines().  
+  - Scrivi su file con write() o writelines().  
+  - Utilizza il costrutto with open(...) as f: per aprire file in modo sicuro, garantendo la chiusura automatica.  
+  - Lavora con file CSV, JSON e altri formati standard con i moduli csv, json e pickle.  
+  - Attenzione alla gestione degli errori (es. file non trovato, permessi) con try/except.  
 
 ### 💡 Problem Solving Algoritmico  
-- **Risolvi sfide reali**:  
-  - Calcoli finanziari (interesse composto, budget) 💰  
-  - Elaborazione testi (crittografia, analisi linguistica) 🔠  
-  - Simulazioni (fisica, giochi probabilistici) 🎲  
-- **Pattern ricorrenti**: Ricerca binaria, algoritmi greedy, ricorsione.  
-- **Ottimizzazione del codice**: Misura tempi di esecuzione e memoria con `timeit` e `tracemalloc`.  
+- **Pensiero Algoritmico**:  
+  - Scomporre un problema complesso in sottoproblemi più semplici.  
+  - Identificare input, output e vincoli.  
+  - Progettare soluzioni passo-passo, verificando la correttezza di ciascun passo.  
+  - Riconoscere casi base e condizioni di terminazione nei problemi ricorsivi.  
+
+- **Pattern ricorrenti**:  
+  - Ricerca binaria  
+  - Algoritmi greedy (scelte locali ottimali)  
+  - Ricorsione e memoizzazione  
+  - Programmazione dinamica  
+  - Divide et impera  
+  - Two pointers, sliding window  
+  - Backtracking  
+
+- **Ottimizzazione del codice**:  
+  - Misura i tempi di esecuzione con `timeit`.  
+  - Monitora l'uso della memoria con `tracemalloc`.  
+  - Confronta soluzioni diverse in termini di complessità computazionale (tempo e spazio).  
+  - Utilizza strutture dati efficienti (es. set, dict, heap, deque).  
+  - Evita calcoli ripetuti (es. caching, memoization).
 
 ### 🌟 Preparazione al Futuro  
 - **Propedeutico per percorsi specialistici**:  
@@ -69,7 +129,7 @@ Immergiti in un percorso strutturato che trasformerà il tuo approccio alla prog
 ## A chi è rivolto?
 🎓 **Studenti**: Perfetto per scuole superiori, università e aziende.  
 🏫 **Insegnanti**: Materiale didattico pronto per lezioni in presenza o online.  
-💻 **Autodidatti**: Strutturato per apprendere senza prerequisiti e senza scadenze. Impara al tuo ritmo! 
+💻 **Autodidatti**: Strutturato per apprendere senza prerequisiti e senza scadenze. Impara al tuo ritmo!  
 💼 **Professionisti**: Aggiorna le tue competenze con uno dei linguaggi più richiesti dal mercato!  
 
 🌍 *Accessibile a tutti, con esempi chiari e un linguaggio semplice e intuitivo!*
@@ -108,7 +168,7 @@ Comprendere la struttura di un computer, i concetti base della programmazione, s
 ### 📘 Capitolo 2 - Numeri e Stringhe
 
 Questo capitolo introduce le variabili, i numeri, le stringhe e le operazioni aritmetiche.  
-Si impara a gestire l’input/output e si toccano i primi concetti di grafica e validazione dati.
+Si impara a gestire l’input/output e si toccano i primi concetti di grafica e le best practices per la scrittura di codice **Pythonico**.
 
 | Sezione                     | Notebook                                                                      | Link                                                                                                                                           |
 |-----------------------------|-------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -117,7 +177,6 @@ Si impara a gestire l’input/output e si toccano i primi concetti di grafica e 
 | Aritmetica                  | 2_Aritmetica.ipynb                                                           | [2_Aritmetica.ipynb](https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo2_Numeri_e_Stringhe/2_Aritmetica.ipynb) |
 | Stringhe                    | 3_Stringhe.ipynb                                                             | [3_Stringhe.ipynb](https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo2_Numeri_e_Stringhe/3_Stringhe.ipynb) |
 | Grafica Intro               | 7_Grafica_intro.ipynb                                                        | [4_Grafica_intro.ipynb](https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo2_Numeri_e_Stringhe/7_Grafica_intro.ipynb) |
-| Algoritmi Base              | 9_Algoritmi_base.ipynb                                                       | [5_Algoritmi_base.ipynb](https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo2_Numeri_e_Stringhe/9_Algoritmi_base.ipynb) |
 | Best Practices              | 10_Best_practices.ipynb                                                      | [6_Best_practices.ipynb](https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo2_Numeri_e_Stringhe/10_Best_practices.ipynb) |
 | Esercizi                    | 11_Esercizi.ipynb                                                            | [7_Esercizi.ipynb](https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo2_Numeri_e_Stringhe/11_Esercizi.ipynb) |
 
@@ -126,17 +185,19 @@ Padroneggiare variabili, operazioni aritmetiche, manipolazione avanzata di strin
 
 **Alla fine del capitolo lo studente sarà in grado di**:
 - Utilizzare le variabili per memorizzare dati
+- Gestire correttamente l'input e l'output di un programma
 - Utilizzare operazioni aritmetiche per manipolare dati numerici
 - Utilizzare e manipolare stringhe per rappresentare e gestire testi  
 - Utilizzare f-string per formattazione avanzata  
 - Distinguere tra oggetti mutabili e immutabili  
 - Progettare algoritmi con operazioni miste numeriche/stringhe  
+- Comprendere il funzionamento basilare della grafica
 - Applicare best practices per codice pulito e leggibile
 
 ### 📘 Capitolo 3 - Decisioni
 
-Viene affrontata la logica delle strutture decisionali: l’uso dell’`if`, degli operatori logici, delle condizioni multiple e delle espressioni booleane.  
-Si lavora su algoritmi decisionali e problemi reali.
+In questo capitolo, affrontiamo la logica delle strutture decisionali: l’uso dell’`if`, degli operatori logici, delle condizioni multiple e delle espressioni booleane.  
+Lavoreremo su algoritmi decisionali e problemi reali.
 
 | Sezione                    | Notebook                                                                        | Link                                                                                                                                                    |
 |----------------------------|---------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -151,7 +212,6 @@ Si lavora su algoritmi decisionali e problemi reali.
 | Applicazioni pratiche      | 8_Applicazioni_pratiche.ipynb                                                  | [8_Applicazioni_pratiche.ipynb](https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo3_Decisioni/8_Applicazioni_pratiche/8_Applicazioni_pratiche.ipynb) |
 | Best practices             | 9_Best_practices.ipynb                                                         | [9_Best_practices.ipynb](https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo3_Decisioni/9_Best_practices/9_Best_practices.ipynb) |
 | Esercizi                   | 10_Esercizi.ipynb                                                              | [10_Esercizi.ipynb](https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo3_Decisioni/10_Esercizi/10_Esercizi.ipynb) |
-| Auto-valutazione           | 11_Auto_valutazione.ipynb                                                      | [11_Auto_valutazione.ipynb](https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo3_Decisioni/11_Auto_valutazione/11_Auto_valutazione.ipynb) |
 
 **🎯 Obiettivo del Capitolo:**  
 Costruire logiche decisionali complesse integrando operatori booleani, espressioni regolari e best practices per la gestione degli input.
