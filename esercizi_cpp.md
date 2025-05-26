@@ -689,3 +689,141 @@ Output: Min = 1, Max = 5
 **Esempio 2**  
 Input: {10, 20, 15}  
 Output: Min = 10, Max = 20
+
+## Esercizi Verifica
+
+<img src="./WhatsApp Image 2025-05-26 at 13.26.43.jpeg">
+
+### Problema 1
+
+Assumiamo di avere gia il vettore di numeri $a[\ ]$ e il numero di elementi $nMax$ e vogliamo calcolare il minimo, il massimo, la media e la somma degli elementi.
+
+```c++
+// PROBLEMA 1: Calcolo statistiche di un vettore
+#include <iostream>
+using namespace std;
+int main() {
+    
+    // Calcolo minimo, massimo, somma
+    int minimo = a[0];
+    int massimo = a[0];
+    int somma = 0;
+    
+    for(int i = 0; i < nMax; i++) {
+        if(a[i] < minimo) minimo = a[i];
+        if(a[i] > massimo) massimo = a[i];
+        somma += a[i];
+    }
+    
+    double media = (double)somma / nMax;
+    
+    cout << "Valore minimo: " << minimo << endl;
+    cout << "Valore massimo: " << massimo << endl;
+    cout << "Media degli elementi: " << media << endl;
+    cout << "Somma degli elementi: " << somma << endl;
+    
+    return 0;
+}
+```
+
+### Problema 2
+
+```c++
+// PROBLEMA 2: Ricerca binaria
+#include <iostream>
+using namespace std;
+int main() {
+    int n;
+    cout << "Inserisci il numero di elementi: ";
+    cin >> n;
+    
+    int arr[n];
+    cout << "Inserisci " << n << " elementi ordinati:" << endl;
+    for(int i = 0; i < n; i++) {
+        cin >> arr[i];
+    }
+    
+    int target;
+    cout << "Inserisci il valore da cercare: ";
+    cin >> target;
+    
+    // Ricerca binaria
+    int left = 0, right = n - 1;
+    int posizione = -1;
+    
+    while(left <= right) {
+        int mid = (left + right) / 2;
+        
+        if(arr[mid] == target) {
+            posizione = mid;
+            break;
+        }
+        else if(arr[mid] < target) {
+            left = mid + 1;
+        }
+        else {
+            right = mid - 1;
+        }
+    }
+    
+    if(posizione != -1) {
+        cout << "Elemento trovato alla posizione: " << posizione << endl;
+    } else {
+        cout << "Elemento non trovato" << endl;
+    }
+    
+    return 0;
+}
+```
+
+### Problema 3
+Assumiamo di avere gia il vettore di numeri $a[\ ]$ e il numero di elementi $nMax$ e vogliamo stampare tutti gli elementi minori di 0.
+
+```c++
+// PROBLEMA 3: Stampa elementi minori di 0
+#include <iostream>
+using namespace std;
+int main() {
+   
+    cout << "Elementi minori di 0:" << endl;
+    bool trovato = false;
+    
+    for(int i = 0; i < nMax; i++) {
+        if(a[i] < 0) {
+            cout << a[i] << " ";
+            trovato = true;
+        }
+    }
+    
+    if(!trovato) {
+        cout << "Nessun elemento minore di 0";
+    }
+    cout << endl;
+    
+    return 0;
+}
+```
+
+### Problema 4
+
+Assumiamo di avere gia il vettore di numeri $a[\ ]$ e il numero di elementi $nMax$ e vogliamo stampare il doppio di ogni elemento.
+
+```c++
+// PROBLEMA 4: Stampa doppio di ogni elemento
+#include <iostream>
+using namespace std;
+int main() {
+    
+    cout << "Il doppio di ogni elemento:" << endl;
+    for(int i = 0; i < nMax; i++) {
+        cout << (a[i] * 2) << " ";
+    }
+    cout << endl;
+    
+    return 0;
+}
+```
+
+### Conclusioni
+
+Se le assunzioni non dovessero essere ammesse, bisogna richiedere in input tutti i dati necessari per risolvere i problemi, come fatto nel problema 2.
