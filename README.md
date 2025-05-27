@@ -141,20 +141,21 @@ Immergiti in un percorso strutturato che trasformerà il tuo approccio alla prog
 In questo capitolo si introducono i concetti fondamentali dell'informatica: cosa sono i programmi, come funziona un computer e cosa significa programmare.  
 Viene introdotto l'ambiente Google Colab e scritto il primo semplice programma.
 
-| Sezione                     | Notebook                                                  | Link                                                                                                                                           |
-|-----------------------------|-----------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| Obiettivi del capitolo      | 0_Obiettivi.ipynb                                         | [0_Obiettivi.ipynb](https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo1_Introduzione/0_Obiettivi_del_capitolo/0_Obiettivi.ipynb) |
-| Concetti di base            | 1_Concetti_di_base.ipynb                                  | [1_Concetti_di_base.ipynb](https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo1_Introduzione/1_Concetti_di_base.ipynb) |
-| Anatomia del computer       | 2_Anatomia_del_computer.ipynb                             | [2_Anatomia_del_computer.ipynb](https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo1_Introduzione/2_Anatomia_del_computer.ipynb) |
-| Pensiero computazionale     | 3_Pensiero_computazionale.ipynb                           | [3_Pensiero_computazionale.ipynb](https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo1_Introduzione/3_Pensiero_computazionale.ipynb) |
-| Linguaggio Python           | 4_Linguaggio_Python.ipynb                                 | [4_Linguaggio_Python.ipynb](https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo1_Introduzione/4_Linguaggio_Python.ipynb) |
-| Google Colab                | 5_Google_Colab.ipynb                                      | [5_Google_Colab.ipynb](https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo1_Introduzione/5_Google_Colab.ipynb) |
-| Ambiente di programmazione  | 6_Ambiente_di_programmazione.ipynb                        | [6_Ambiente_di_programmazione.ipynb](https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo1_Introduzione/6_Ambiente_di_programmazione.ipynb) |
-| Primo programma             | 7_Primo_programma.ipynb                                   | [7_Primo_programma.ipynb](https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo1_Introduzione/7_Primo_programma.ipynb) |
-| Errori comuni               | 8_Errori_comuni.ipynb                                     | [8_Errori_comuni.ipynb](https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo1_Introduzione/8_Errori_comuni.ipynb) |
-| Debugging Base              | 9_Debugging_Base.ipynb                                    | [9_Debugging_Base.ipynb](https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo1_Introduzione/9_Debugging_Base.ipynb) |
-| Virtual Environment         | 10_Virtual_Environment.ipynb                              | [10_Virtual_Environment.ipynb](https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo1_Introduzione/10_Virtual_Environment.ipynb) |
-| Esercizi                    | 11_Esercizi.ipynb                                         | [11_Esercizi.ipynb](https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo1_Introduzione/11_Esercizi.ipynb) |
+| Sezione                    | Notebook                          | Link |
+|----------------------------|-----------------------------------|------|
+| Obiettivi del capitolo     | 0_Obiettivi.ipynb                 | <a href="https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo1_Introduzione/0_Obiettivi_del_capitolo/0_Obiettivi.ipynb" target="_blank">0_Obiettivi.ipynb</a> |
+| Concetti di base           | 1_Concetti_di_base.ipynb          | <a href="https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo1_Introduzione/1_Concetti_di_base.ipynb" target="_blank">1_Concetti_di_base.ipynb</a> |
+| Anatomia del computer      | 2_Anatomia_del_computer.ipynb     | <a href="https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo1_Introduzione/2_Anatomia_del_computer.ipynb" target="_blank">2_Anatomia_del_computer.ipynb</a> |
+| Pensiero computazionale    | 3_Pensiero_computazionale.ipynb   | <a href="https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo1_Introduzione/3_Pensiero_computazionale.ipynb" target="_blank">3_Pensiero_computazionale.ipynb</a> |
+| Linguaggio Python          | 4_Linguaggio_Python.ipynb         | <a href="https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo1_Introduzione/4_Linguaggio_Python.ipynb" target="_blank">4_Linguaggio_Python.ipynb</a> |
+| Google Colab               | 5_Google_Colab.ipynb              | <span style="color:red;">5_Google_Colab.ipynb</span> |
+| Ambiente di programmazione | 6_Ambiente_di_programmazione.ipynb| <span style="color:red;">6_Ambiente_di_programmazione.ipynb</span> |
+| Primo programma            | 7_Primo_programma.ipynb           | <span style="color:red;">7_Primo_programma.ipynb</span> |
+| Errori comuni              | 8_Errori_comuni.ipynb             | <span style="color:red;">8_Errori_comuni.ipynb</span> |
+| Debugging Base             | 9_Debugging_Base.ipynb            | <span style="color:red;">9_Debugging_Base.ipynb</span> |
+| Virtual Environment        | 10_Virtual_Environment.ipynb      | <span style="color:red;">10_Virtual_Environment.ipynb</span> |
+| Esercizi                   | 11_Esercizi.ipynb                 | <span style="color:red;">11_Esercizi.ipynb</span> |
+
 
 **🎯 Obiettivo del Capitolo:**  
 Comprendere la struttura di un computer, i concetti base della programmazione, scrivere semplici script Python in Colab e gestire ambienti di sviluppo.
@@ -170,15 +171,16 @@ Comprendere la struttura di un computer, i concetti base della programmazione, s
 Questo capitolo introduce le variabili, i numeri, le stringhe e le operazioni aritmetiche.  
 Si impara a gestire l’input/output e si toccano i primi concetti di grafica e le best practices per la scrittura di codice **Pythonico**.
 
-| Sezione                     | Notebook                                                                      | Link                                                                                                                                           |
-|-----------------------------|-------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| Obiettivi del capitolo      | 0_Obiettivi.ipynb                                                            | [0_Obiettivi.ipynb](https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo2_Numeri_e_Stringhe/0_Obiettivi_del_capitolo/0_Obiettivi.ipynb) |
-| Variabili                   | 1_Variabili.ipynb                                                            | [1_Variabili.ipynb](https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo2_Numeri_e_Stringhe/1_Variabili.ipynb) |
-| Aritmetica                  | 2_Aritmetica.ipynb                                                           | [2_Aritmetica.ipynb](https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo2_Numeri_e_Stringhe/2_Aritmetica.ipynb) |
-| Stringhe                    | 3_Stringhe.ipynb                                                             | [3_Stringhe.ipynb](https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo2_Numeri_e_Stringhe/3_Stringhe.ipynb) |
-| Grafica Intro               | 7_Grafica_intro.ipynb                                                        | [4_Grafica_intro.ipynb](https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo2_Numeri_e_Stringhe/7_Grafica_intro.ipynb) |
-| Best Practices              | 10_Best_practices.ipynb                                                      | [6_Best_practices.ipynb](https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo2_Numeri_e_Stringhe/10_Best_practices.ipynb) |
-| Esercizi                    | 11_Esercizi.ipynb                                                            | [7_Esercizi.ipynb](https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo2_Numeri_e_Stringhe/11_Esercizi.ipynb) |
+| Sezione                | Notebook                      | Link |
+|------------------------|-------------------------------|------|
+| Obiettivi del capitolo | 0_Obiettivi.ipynb             | <a href="https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo2_Numeri_e_Stringhe/0_Obiettivi_del_capitolo/0_Obiettivi.ipynb" target="_blank">0_Obiettivi.ipynb</a> |
+| Variabili              | 1_Variabili.ipynb             | <a href="https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo2_Numeri_e_Stringhe/1_Variabili.ipynb" target="_blank">1_Variabili.ipynb</a> |
+| Aritmetica             | 2_Aritmetica.ipynb            | <a href="https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo2_Numeri_e_Stringhe/2_Aritmetica.ipynb" target="_blank">2_Aritmetica.ipynb</a> |
+| Stringhe               | 3_Stringhe.ipynb              | <a href="https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo2_Numeri_e_Stringhe/3_Stringhe.ipynb" target="_blank">3_Stringhe.ipynb</a> |
+| Grafica Intro          | 7_Grafica_intro.ipynb         | <span style="color:red;">4_Grafica_intro.ipynb</span> |
+| Best Practices         | 10_Best_practices.ipynb       | <span style="color:red;">6_Best_practices.ipynb</span> |
+| Esercizi               | 11_Esercizi.ipynb             | <span style="color:red;">7_Esercizi.ipynb</span> |
+
 
 **🎯 Obiettivo del Capitolo:**  
 Padroneggiare variabili, operazioni aritmetiche, manipolazione avanzata di stringhe e comprendere la natura mutabile/immutabile dei tipi di dati.
