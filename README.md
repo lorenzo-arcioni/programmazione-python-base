@@ -171,7 +171,7 @@ Si impara a gestire l’input/output e si toccano i primi concetti di grafica e 
 
 | Sezione                | Notebook                      | Link |
 |------------------------|-------------------------------|------|
-| Obiettivi del capitolo | 0_Obiettivi.ipynb             | <a href="https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo2_Numeri_e_Stringhe/0_Obiettivi_del_capitolo/0_Obiettivi.ipynb" target="_blank">0_Obiettivi.ipynb</a> |
+| Obiettivi del capitolo | 0_Obiettivi.ipynb             | <a href="https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo2_Numeri_e_Stringhe/0_Obiettivi.ipynb" target="_blank">0_Obiettivi.ipynb</a> |
 | Variabili              | 1_Variabili.ipynb             | <a href="https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo2_Numeri_e_Stringhe/1_Variabili.ipynb" target="_blank">1_Variabili.ipynb</a> |
 | Aritmetica             | 2_Aritmetica.ipynb            | <a href="https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo2_Numeri_e_Stringhe/2_Aritmetica.ipynb" target="_blank">2_Aritmetica.ipynb</a> |
 | Stringhe               | 3_Stringhe.ipynb              | <a href="https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo2_Numeri_e_Stringhe/3_Stringhe.ipynb" target="_blank">3_Stringhe.ipynb</a> |
@@ -198,18 +198,19 @@ Padroneggiare variabili, operazioni aritmetiche, manipolazione avanzata di strin
 
 In questo capitolo si approfondiscono le principali strutture dati avanzate offerte da Python: **liste**, **tuple**, **set**, **dizionari**, ma anche tipi meno noti come **range**, **bytes**, **bytearray** e **memoryview**. Questi strumenti permettono di rappresentare, organizzare ed elaborare insiemi di dati in modo efficiente, e sono fondamentali per qualunque programma di media o alta complessità. Impareremo ad accedere, modificare, ordinare e iterare su collezioni di dati, comprendendo anche il ruolo dei tipi immutabili e mutabili.
 
-| Sezione                       | Notebook                                                                     | Link                                                                                                                                                          |
-|-------------------------------|------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Obiettivi del capitolo        | 0_Obiettivi.ipynb                                                           | [0_Obiettivi.ipynb](https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo3_Tipi_di_dato_avanzati/0_Obiettivi_del_capitolo/0_Obiettivi.ipynb) |
-| Liste                         | 1_Liste.ipynb                                                               | [1_Liste.ipynb](https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo3_Tipi_di_dato_avanzati/1_Liste/1_Liste.ipynb) |
-| Tuple                         | 2_Tuple.ipynb                                                               | [2_Tuple.ipynb](https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo3_Tipi_di_dato_avanzati/2_Tuple/2_Tuple.ipynb) |
-| Set                           | 3_Set.ipynb                                                                 | [3_Set.ipynb](https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo3_Tipi_di_dato_avanzati/3_Set/3_Set.ipynb) |
-| Dizionari                     | 4_Dizionari.ipynb                                                           | [4_Dizionari.ipynb](https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo3_Tipi_di_dato_avanzati/4_Dizionari/4_Dizionari.ipynb) |
-| Metodi e funzioni utili       | 5_Metodi_e_funz_utili_su_collezioni.ipynb                                   | [5_Metodi_e_funz_utili_su_collezioni.ipynb](https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo3_Tipi_di_dato_avanzati/5_Metodi_e_funz_utili_su_collezioni/5_Metodi_e_funz_utili_su_collezioni.ipynb) |
-| Tipi speciali: range e byte   | 6_Range_bytes_bytearray_memoryview.ipynb                                    | [6_Range_bytes_bytearray_memoryview.ipynb](https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo3_Tipi_di_dato_avanzati/6_Range_bytes_bytearray_memoryview/6_Range_bytes_bytearray_memoryview.ipynb) |
-| Applicazioni pratiche         | 7_Applicazioni_pratiche.ipynb                                               | [7_Applicazioni_pratiche.ipynb](https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo3_Tipi_di_dato_avanzati/7_Applicazioni_pratiche/7_Applicazioni_pratiche.ipynb) |
-| Best practices                | 8_Best_practices.ipynb                                                      | [8_Best_practices.ipynb](https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo3_Tipi_di_dato_avanzati/8_Best_practices/8_Best_practices.ipynb) |
-| Esercizi                      | 9_Esercizi.ipynb                                                             | [9_Esercizi.ipynb](https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo3_Tipi_di_dato_avanzati/9_Esercizi/9_Esercizi.ipynb) |
+| Sezione                     | Notebook                         | Link                                                                                                                                                             |
+|-----------------------------|---------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Obiettivi del capitolo      | 0_Obiettivi.ipynb               | <a href="https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo3_Tipi_di_Dato_Avanzati/0_Obiettivi.ipynb" target="_blank">0_Obiettivi.ipynb</a> |
+| Liste                       | 1_Liste.ipynb                   | <a href="https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo3_Tipi_di_Dato_Avanzati/1_Liste.ipynb" target="_blank">1_Liste.ipynb</a>                                                                                                                   |
+| Tuple                       | 2_Tuple.ipynb                   | <span style="color:red;">2_Tuple.ipynb</span>                                                                                                                   |
+| Set                         | 3_Set.ipynb                     | <span style="color:red;">3_Set.ipynb</span>                                                                                                                     |
+| Dizionari                   | 4_Dizionari.ipynb               | <span style="color:red;">4_Dizionari.ipynb</span>                                                                                                               |
+| Metodi e funzioni utili     | 5_Metodi_e_funz_utili_su_collezioni.ipynb | <span style="color:red;">5_Metodi_e_funz_utili_su_collezioni.ipynb</span>                                                                                       |
+| Tipi speciali: range e byte | 6_Range_bytes_bytearray_memoryview.ipynb | <span style="color:red;">6_Range_bytes_bytearray_memoryview.ipynb</span>                                                                                        |
+| Applicazioni pratiche       | 7_Applicazioni_pratiche.ipynb   | <span style="color:red;">7_Applicazioni_pratiche.ipynb</span>                                                                                                   |
+| Best practices              | 8_Best_practices.ipynb          | <span style="color:red;">8_Best_practices.ipynb</span>                                                                                                         |
+| Esercizi                    | 9_Esercizi.ipynb                | <span style="color:red;">9_Esercizi.ipynb</span>                                                                                                               |
+
 
 **🎯 Obiettivo del Capitolo:**  
 Diventare esperti nell’uso delle principali collezioni Python, sapendo scegliere quella più adatta al problema, manipolare dati in modo efficiente e scrivere codice leggibile e idiomatico. Approfondire anche strutture meno comuni per un controllo più fine della memoria e delle sequenze numeriche.
@@ -230,32 +231,35 @@ Diventare esperti nell’uso delle principali collezioni Python, sapendo sceglie
 
 In questo capitolo, affrontiamo la logica delle strutture decisionali: l’uso dell’`if`, degli operatori logici, delle condizioni multiple e delle espressioni booleane.  In questo capitolo si affrontano, inoltre, le strutture iterative, fondamentali per eseguire azioni ripetute nei programmi. Si parte dal ciclo `while`, passando per il ciclo `for` e gli algoritmi che richiedono ripetizione. Verranno anche trattati cicli annidati, gestione di stringhe con i cicli, simulazioni casuali e tecniche di conteggio.
 
-| Sezione                    | Notebook                                                                        | Link                                                                                                                                                    |
-|----------------------------|---------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Obiettivi del capitolo     | 0_Obiettivi.ipynb                                                              | [0_Obiettivi.ipynb](https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo4_Decisioni_e_Cicli/0_Obiettivi_del_capitolo/0_Obiettivi.ipynb) |
-| If e relazionali           | 1_If_e_relazionali.ipynb                                                       | [1_If_e_relazionali.ipynb](https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo4_Decisioni_e_Cicli/1_If_e_relazionali/1_If_e_relazionali.ipynb) |
-| Strutture condizionali     | 2_Strutture_condizionali.ipynb                                                 | [2_Strutture_condizionali.ipynb](https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo4_Decisioni_e_Cicli/2_Strutture_condizionali/2_Strutture_condizionali.ipynb) |
-| Operatori booleani         | 3_Operatori_booleani.ipynb                                                     | [3_Operatori_booleani.ipynb](https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo4_Decisioni_e_Cicli/3_Operatori_booleani/3_Operatori_booleani.ipynb) |
-| Analisi di stringhe        | 4_Analisi_di_stringhe.ipynb                                                    | [4_Analisi_di_stringhe.ipynb](https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo4_Decisioni_e_Cicli/4_Analisi_di_stringhe/4_Analisi_di_stringhe.ipynb) |
-| **Regular Expressions**    | 5_Regex.ipynb                                                                  | [5_Regex.ipynb](https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo4_Decisioni_e_Cicli/5_Regex/5_Regex.ipynb) |
-| Gestione input             | 6_Gestione_input.ipynb                                                         | [6_Gestione_input.ipynb](https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo4_Decisioni_e_Cicli/6_Gestione_input/6_Gestione_input.ipynb) |
-| Algoritmi decisionali      | 7_Algoritmi_decisionali.ipynb                                                  | [7_Algoritmi_decisionali.ipynb](https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo4_Decisioni_e_Cicli/7_Algoritmi_decisionali/7_Algoritmi_decisionali.ipynb) |
-| Applicazioni pratiche      | 8_Applicazioni_pratiche.ipynb                                                  | [8_Applicazioni_pratiche.ipynb](https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo4_Decisioni_e_Cicli/8_Applicazioni_pratiche/8_Applicazioni_pratiche.ipynb) |
-| Best practices             | 9_Best_practices.ipynb                                                         | [9_Best_practices.ipynb](https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo4_Decisioni_e_Cicli/9_Best_practices/9_Best_practices.ipynb) |
-| Esercizi                   | 10_Esercizi.ipynb                                                              | [10_Esercizi.ipynb](https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo4_Decisioni_e_Cicli/10_Esercizi/10_Esercizi.ipynb) |
+| Sezione                    | Notebook                                                                        | Link                                                                                                                                                             |
+|----------------------------|---------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Obiettivi del capitolo     | 0_Obiettivi.ipynb                                                              | <span style="color:red;">0_Obiettivi.ipynb</span> |
+| If statement               | 1_If_statement.ipynb                                                            | <span style="color:red;">1_If_statement.ipynb</span>                                                                                                            |
+| Ciclo while                | 2_Ciclo_while.ipynb                                                             | <span style="color:red;">2_Ciclo_while.ipynb</span>                                                                                                            |
+| Ciclo for                  | 3_Ciclo_for.ipynb                                                               | <span style="color:red;">3_Ciclo_for.ipynb</span>                                                                                                              |
+| Operatori logici e booleani| 4_Operatori_logici_booleani.ipynb                                               | <span style="color:red;">4_Operatori_logici_booleani.ipynb</span>                                                                                              |
+| Cicli annidati             | 5_Cicli_annidati.ipynb                                                          | <span style="color:red;">5_Cicli_annidati.ipynb</span>                                                                                                         |
+| Gestione stringhe con cicli| 6_Gestione_stringhe_con_cicli.ipynb                                            | <span style="color:red;">6_Gestione_stringhe_con_cicli.ipynb</span>                                                                                            |
+| Simulazioni casuali        | 7_Simulazioni_casuali.ipynb                                                     | <span style="color:red;">7_Simulazioni_casuali.ipynb</span>                                                                                                    |
+| Tecniche di conteggio      | 8_Tecniche_di_conteggio.ipynb                                                   | <span style="color:red;">8_Tecniche_di_conteggio.ipynb</span>                                                                                                  |
+| Best practices             | 9_Best_practices.ipynb                                                          | <span style="color:red;">9_Best_practices.ipynb</span>                                                                                                         |
+| Esercizi                   | 10_Esercizi.ipynb                                                               | <span style="color:red;">10_Esercizi.ipynb</span>                                                                                                              |
+
 
 **🎯 Obiettivo del Capitolo:**  
-Costruire logiche decisionali complesse integrando operatori booleani, espressioni regolari e best practices per la gestione degli input. Scrivere programmi che eseguono ripetizioni in base a condizioni o contatori, comprendere la logica dei cicli `while` e `for`, usare i cicli per elaborare dati e costruire simulazioni con numeri casuali.
+Comprendere la logica condizionale e le strutture iterative in Python, saper scrivere programmi con decisioni multiple e ripetizioni efficaci, e applicare queste conoscenze per risolvere problemi complessi e simulazioni.
 
 **Alla fine del capitolo lo studente sarà in grado di**:  
-- Combinare condizioni multiple con operatori logici  
-- Progettare algoritmi decisionali per scenari reali  
-- Applicare tecniche di sanitizzazione degli input  
-- Costruire cicli `while` e `for` efficaci.  
-- Riconoscere pattern ripetitivi nei problemi.  
-- Utilizzare cicli annidati e operazioni su stringhe.  
-- Applicare i cicli in simulazioni ed elaborazioni algoritmiche complesse.  
-- Sfruttare funzioni avanzate come `enumerate` e `zip` per iterazioni più efficienti.
+- Usare le istruzioni `if`, `elif`, `else` per prendere decisioni multiple  
+- Applicare operatori logici (`and`, `or`, `not`) e comprendere la valutazione booleana  
+- Scrivere cicli `while` per eseguire ripetizioni basate su condizioni  
+- Utilizzare cicli `for` per iterare su sequenze e intervalli  
+- Gestire cicli annidati e operazioni complesse su dati multidimensionali  
+- Iterare su stringhe e manipolare caratteri con i cicli  
+- Realizzare semplici simulazioni casuali usando il modulo `random`  
+- Applicare tecniche di conteggio e accumulo nei cicli  
+- Implementare best practices per cicli e condizioni per migliorare leggibilità e performance  
+
 
 ### 📘 Capitolo 5 - Funzioni
 
