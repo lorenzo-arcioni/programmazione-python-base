@@ -156,6 +156,10 @@ dove `sub`, `old` e `new` sono stringhe.
 - `str.split(sep)` → Divide la stringa in una lista di sottostringhe usando `sep` come delimitatore  
 - `sep.join(lista)` → Unisce una lista di stringhe in una singola stringa, separandole con `sep`
 
+Quello che restituisce la funzione `split`, e che la funzione `join` prende in input, è una **lista**. La lista è una particolare struttura dati, molto importante, che approfondiremo più avanti.
+
+Per accedere all'elemento i-esimo della lista `lista` si usa la notazione `lista[i].`.
+
 ### ✂️ Rimozione di spazi: `strip()`, `rstrip()`, `lstrip()`
 
 - `str.strip()` → Rimuove spazi (e caratteri di nuova riga) da **entrambe** le estremità  
