@@ -118,3 +118,53 @@ protocollo_19 = ...
 
 cf_sporco_20 = "rssmrc 85m15 f205x"
 cf_pulito_20 = ...
+
+# Esercizio 21: Estrai i caratteri alle posizioni pari da una stringa
+# Da "programmazione" ottieni "pormain"
+s = "programmazione"
+risultato_21 = ...
+
+# Esercizio 22: Estrai i caratteri alle posizioni dispari da una stringa
+# Da "programmazione" ottieni "rgamzoe"
+s = "programmazione"
+risultato_22 = ...
+
+# Esercizio 23: Inverti una stringa saltando un carattere ogni due (primo carattere incluso)
+# Da "abcdefghij" ottieni "jhfdb"
+s = "abcdefghij"
+risultato_23 = ...
+
+# Esercizio 24: Estrai gli ultimi 5 caratteri in ordine inverso
+# Da "manipolazione" ottieni "enoiz"
+s = "manipolazione"
+risultato_24 = ...
+
+# Esercizio 25: Estrai ogni terzo carattere partendo dal secondo (incluso)
+# Da "0123456789abcdef" ottieni "147ad"
+s = "0123456789abcdef"
+risultato_25 = ...
+
+# Esercizio 26: Estrai i caratteri in ordine inverso escludendo il primo e l’ultimo
+# Da "algoritmo" ottieni "mtirogl"
+s = "algoritmo"
+risultato_26 = ...
+
+# Esercizio 27: Estrai un carattere ogni due (primo incluso), tra la terza e l’ultima posizione esclusa
+# Da "estrazione" ottieni "tain"
+s = "estrazione"
+risultato_27 = ...
+
+# Esercizio 28: Crea una nuova stringa concatenando i primi 3 caratteri e gli ultimi 3 (gli ultimi 3 invertiti)
+# Da "funzionale" ottieni "funela"
+s = "funzionale"
+risultato_28 = ...
+
+# Esercizio 29: Estrai ogni terzo carattere, a partire dal penultimo verso l’inizio
+# Da "abcdefghijk" ottieni "jgda"
+s = "abcdefghijk"
+risultato_29 = ...
+
+# Esercizio 30: Escludendo i primi 2 e gli ultimi 2 caratteri, estrai i rimanenti saltandone uno ogni volta.
+# Da "programmazione" ottieni "ormai"
+s = "programmazione"
+risultato_30 = ...
