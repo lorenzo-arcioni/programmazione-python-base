@@ -93,4 +93,24 @@ check('protocollo_19', str, "https")
 check('cf_sporco_20', str, "rssmrc 85m15 f205x")
 check('cf_pulito_20', str, "RSSMRC85M15F205X")
 
+check('risultato_21', str, "pormain")
+
+check('risultato_22', str, "rgamzoe")
+
+check('risultato_23', str, "jhfdb")
+
+check('risultato_24', str, "enoiz")
+
+check('risultato_25', str, "147ad")
+
+check('risultato_26', str, "mtirogl")
+
+check('risultato_27', str, "tain")
+
+check('risultato_28', str, "funela")
+
+check('risultato_29', str, "jgda")
+
+check('risultato_30', str, "ormai")
+
 print(f"\n{GREEN}✅ Tutti i test superati.{RESET}")
