@@ -1,294 +1,169 @@
-<a href="https://colab.research.google.com/github/lorenzo-arcioni/programmazione-python-base/blob/main/Capitolo3_Tipi_di_Dato_Avanzati/1_Liste.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+# 🔐 Tuple
 
-# 📜 Liste
+Le **tuple** sono una struttura dati fondamentale in Python, utilizzata per rappresentare collezioni **ordinate** e **immutabili** di elementi.  
+Sono strettamente imparentate con le **liste**, ma con una caratteristica chiave: **non possono essere modificate dopo la creazione**.
 
-Le **liste** sono una delle strutture dati più importanti e versatili del linguaggio Python. Comprendere appieno il funzionamento delle liste è fondamentale per diventare programmatori competenti, in quanto le liste sono onnipresenti nella scrittura di algoritmi, nell'elaborazione di dati, nella manipolazione di sequenze e in generale in ogni tipo di programmazione procedurale e funzionale.
+Comprendere le tuple è essenziale, non solo per memorizzare dati fissi, ma anche per strutturare valori che non devono cambiare accidentalmente.  
+Sono spesso utilizzate per rappresentare:
+
+- **Coordinate** (es. posizione in uno spazio 2D o 3D),
+- **Valori multipli di ritorno da una funzione**,
+- **Record immutabili** (es. dati anagrafici non modificabili),
 
 ## 📚 Definizione generale
 
-Una **lista** è una collezione **ordinata**, **indicizzata** e **mutabile** di elementi.  
-In termini semplici:
-- *Ordinata* significa che gli elementi sono memorizzati secondo l'ordine in cui vengono inseriti.
-- *Indicizzata* indica che ogni elemento può essere identificato e accessibile tramite un indice numerico, a partire da zero.
-- *Mutabile* significa che è possibile modificare il contenuto della lista (aggiungere, rimuovere o cambiare elementi) **dopo** la sua creazione.
+Una **tupla** è una collezione:
 
-Questo distingue le liste da altre collezioni come le **tuple** (che sono immutabili) o gli **insiemi** (che non sono ordinati né indicizzati).
+- ✅ Ordinata: gli elementi vengono mantenuti nell’ordine in cui sono stati definiti;
+- ✅ Indicizzata: è possibile accedere agli elementi tramite l’indice (es. `tupla[0]`);
+- 🚫 Immutabile: una volta creata, **non è possibile aggiungere, rimuovere o modificare** gli elementi;
+- ✅ Permette duplicati: possono comparire più volte gli stessi valori;
+- ✅ Eterogenea: può contenere oggetti di tipo diverso (interi, stringhe, liste, altre tuple…).
 
-Vediamo subito un primo esempio in python!
 
-Per ottenere la lunghezza di una lista, utilizziamo la funzione `len()`. Esattamente come nelle stringhe, la funzione `len()` restituisce il numero di elementi nella lista.
+> ✨ Questo rende le tuple **più sicure**, **più veloci**, e adatte a rappresentare **dati costanti**, come le coordinate di un punto, parametri fissi, o record che non devono cambiare.
 
-## 🧱 Caratteristiche fondamentali
+## 🧪 Esempio base
 
-Elenchiamo ora alcune delle caratteristiche più importanti delle liste:
+Ecco come si definisce e si utilizza una tupla in Python:
 
-- Una lista può contenere **elementi eterogenei**, ovvero di tipi diversi: numeri, stringhe, booleani, oggetti complessi, altre liste, funzioni e perfino `None`.
-- Le liste possono essere **nidificate**, cioè contenere al loro interno altre liste. Questo permette di rappresentare strutture complesse come matrici, tabelle o strutture ad albero.
-- Le liste supportano **operazioni di slicing**, ovvero l'accesso a sotto-sequenze tramite intervalli (come abbiamo visto nelle stringhe).
-- Essendo **mutabili**, le liste possono essere modificate in modo efficiente in memoria, senza dover creare una nuova lista per ogni cambiamento.
+📌 Nota: anche se le parentesi tonde `()` sono il modo più comune per definire una tupla, **Python riconosce una tupla anche senza parentesi**, se gli elementi sono separati da virgole:
 
-## 🔢 Indicizzazione
+Approfondiremo questo concetto tra poco!
 
-Ogni elemento di una lista è accessibile tramite un **indice**. L'indicizzazione in Python parte da `0`, quindi il primo elemento ha indice 0, il secondo indice 1, e così via.  
-Gli indici possono anche essere **negativi**, il che permette di accedere agli elementi partendo dalla fine della lista: `-1` rappresenta l'ultimo elemento, `-2` il penultimo, e così via.
+Attenzione alla sintassi: una tupla con un solo elemento richiede la virgola finale!
 
-$$
-\textit{Tutto esattamente come nelle stringhe!}
-$$
+🧠 È una trappola comune: la virgola è ciò che definisce una tupla, non le parentesi.
 
-L'indicizzazione consente un accesso diretto, costante in tempo (complessità $\mathcal O(1)$) a ciascun elemento della lista, una proprietà estremamente utile nelle strutture dati.
+## 🔢 Indicizzazione e slicing
 
-## ✂️ Slicing: sotto-liste e accessi parziali
+Le tuple supportano le stesse tecniche di accesso tramite indice e slicing viste per liste e stringhe:
 
-Lo **slicing** è una tecnica per accedere a un sottoinsieme degli elementi di una lista.  
-È molto utile per estrarre porzioni, eseguire operazioni su segmenti della lista o costruire nuove liste a partire da quelle esistenti.  
-L'intervallo di slicing è sempre **inclusivo a sinistra** e **esclusivo a destra**.  
-È possibile anche specificare un **passo** per saltare elementi.
+## ♻️ Immutabilità
 
-Valgono tutti i concetti di slicing che abbiamo visto nelle stringhe. Quindi siamo andati veloci sullo slicing! 😁
+La differenza fondamentale tra tuple e liste è proprio questa: le tuple non possono essere modificate.
 
-## ♻️ Mutabilità: aggiornare, modificare, inserire, rimuovere
+## 📦 Packing e unpacking
 
-La mutabilità delle liste consente operazioni estremamente versatili. È possibile:
+Python permette di **"impacchettare" (packing)** valori in una tupla e **"spacchettarli" (unpacking)** facilmente, rendendo il codice più leggibile e conciso.
 
-- Cambiare direttamente il valore di un elemento in posizione nota.
-- Aggiungere uno o più elementi alla fine della lista (concatenazione).
-- Inserire elementi in una posizione specifica.
-- Rimuovere elementi esistenti per posizione o per valore.
-- Svuotare completamente la lista senza crearne una nuova.
+### 📦 Packing (impacchettamento)
 
-La mutabilità rende le liste molto più dinamiche rispetto ad altre strutture dati, ma introduce anche il rischio di effetti collaterali se si lavora su **riferimenti** condivisi.
+Il *packing* consiste nel **creare una tupla** a partire da più valori:
 
-### 🔧 Operazioni fondamentali sulle Liste
+📌 Anche se non usi le parentesi tonde, Python interpreta la virgola come creazione di una tupla.
 
-Le liste permettono di **modificare, aggiungere, rimuovere e accedere** agli elementi con grande flessibilità. Vediamo alcune operazioni fondamentali che si eseguono frequentemente con una lista.
+### 🧯 Unpacking (spacchettamento)
 
-#### 📌 Esempio iniziale
+L’unpacking consiste nell’**assegnare gli elementi della tupla a variabili distinte**:
 
-Consideriamo la lista:
+⚠️ Il numero di variabili a sinistra deve **corrispondere** al numero di elementi nella tupla, altrimenti si genera un errore.
 
-Questa lista contiene tre stringhe. Ogni elemento è accessibile tramite un **indice intero** (a partire da 0).
+### 🪄 Unpacking con l'operatore `*`
 
-### 🔄 Modifica di un elemento
+Puoi usare l’operatore `*` per catturare più elementi in una lista:
 
-Consideriamo la lista:
+> ✨ L’unpacking è molto usato nelle funzioni, nei cicli e per scrivere codice elegante e chiaro.
 
-In questo esempio, l’elemento in posizione 1 (cioè "banana") viene sostituito con "pera".  
-Le liste in Python **supportano l’assegnazione diretta a un indice**, proprio perché sono **mutabili**.  
-Questo è uno dei vantaggi principali rispetto alle tuple.
+## 🔍 Operazioni disponibili sulle tuple
 
-### ➕ Aggiunta di un elemento alla fine della lista
+Sebbene le tuple siano **immutabili**, possiamo comunque svolgere diverse operazioni utili su di esse:
 
-Consideriamo la lista:
+### 📏 Lunghezza con `len()`
 
-Il metodo `append()` aggiunge un nuovo elemento **in fondo alla lista**, aumentandone la lunghezza di uno.  
-È il metodo più usato per **espandere una lista** dinamicamente, ad esempio durante la lettura di input o l'elaborazione di dati.
+### 🔍 Accesso agli elementi tramite indice
 
-### 📥 Inserimento in una posizione specifica
+### 🧪 Appartenenza con `in`
 
-Consideriamo la lista:
-
-Il metodo `insert(indice, valore)` permette di **inserire un nuovo elemento in una posizione precisa**, spostando in avanti gli elementi successivi.  
-In questo caso, "fragola" viene inserita alla **posizione 1**, prima di "pera".
-
-### ❌ Rimozione per valore
-
-Consideriamo la lista:
-
-Il metodo `remove(valore)` cerca il primo elemento che **corrisponde esattamente** al valore indicato e lo elimina dalla lista.  
-⚠️ Se il valore non è presente, viene generato un errore `ValueError`, quindi può essere utile verificare prima che l'elemento sia effettivamente presente con l'operatore `in`.
-
-### 📦 Stato finale della lista
-
-Dopo tutte le operazioni sopra, il contenuto della lista sarà:
-
-Ogni metodo ha agito in modo coerente sulla struttura della lista, modificandone dinamicamente il contenuto.
-
-💡 Queste operazioni sono fondamentali nella programmazione Python, e vengono usate in moltissimi algoritmi e flussi di dati. Apprenderle a fondo ti permetterà di costruire strutture più complesse, come liste annidate, code, pile e strutture ibride.
-
-## 🧮 Operazioni comuni sulle liste
-
-Le liste sono tra le strutture più flessibili in Python, e conoscere le loro operazioni fondamentali è essenziale per qualsiasi programmatore. Di seguito vengono descritte le principali operazioni che si possono effettuare con una lista.
-
-### 🔗 Concatenazione
-
-La concatenazione consiste nell’unire due (o più) liste per formare una nuova lista che contiene tutti gli elementi delle liste originarie **nell’ordine in cui appaiono**.  
-Questa operazione **non modifica le liste originali**, ma ne crea una nuova risultante. È molto utile quando si vogliono combinare dati provenienti da fonti diverse o strutturare insiemi più grandi a partire da sottoinsiemi.
-
-Anche qui, esattamente come le stringhe!
-
-#### Estensione con `exstend()`
-
-Il metodo `extend()` permette di aggiungere **tutti gli elementi di una lista** alla fine di una lista esistente.
-
-A differenza di `append()`, che aggiunge l’intero oggetto come singolo elemento, `extend()` “srotola” l’iterabile e inserisce ciascun elemento singolarmente.
-
-Questo è molto utile quando vuoi unire due liste o aggiungere più elementi contemporaneamente senza creare una nuova lista.
+### ➕ Concatenazione
 
 ### 🔁 Ripetizione
 
-È possibile **replicare** gli elementi di una lista più volte, ottenendo una lista più lunga con sequenze ripetute.  
-Questa operazione può servire a creare modelli, dati di test, o ad inizializzare strutture con pattern ripetuti.
+## 🛠️ Tutti i metodi disponibili per le tuple
 
-### 🔍 Appartenenza
+Le tuple supportano **solo due metodi integrati**:
 
-Con l’operazione di appartenenza si verifica se un determinato valore **è presente** all’interno della lista.  
-È una delle operazioni più comuni, soprattutto per il controllo di input, la validazione di dati o la verifica di condizioni.  
-L’operatore di appartenenza restituisce un valore booleano (`vero` o `falso`), ed è molto utile nei blocchi decisionali.
+- `.count(x)` → Conta quante volte `x` appare nella tupla.
+- `.index(x)` → Restituisce l’indice della **prima occorrenza** di `x`.
 
-### 🔄 Scorrimento (iterazione)
+> ⚠️ Al contrario delle liste, **non** puoi usare metodi come `.append()`, `.remove()` o `.sort()` perché modificherebbero la struttura.
 
-Le liste possono essere **iterate**, cioè percorse elemento per elemento, tipicamente tramite un ciclo.  
-Durante lo scorrimento è possibile analizzare, trasformare, filtrare o aggregare i dati.  
-L’iterazione è alla base di moltissimi algoritmi, come il calcolo di somme, medie, ricerche condizionate o trasformazioni.
+## 🧠 Tuple sono hashable
 
-Esamineremo in dettaglio questa caratteristica quando introdurremo i cicli!
+Un oggetto si dice **hashable** quando possiede una caratteristica molto importante: **il suo valore non cambia durante la sua vita**, e quindi può essere associato a un codice numerico fisso chiamato **hash**.
 
-### 📊 Ordinamento
+Le **tuple sono oggetti hashable**, il che significa che possono essere utilizzate come **chiavi nei dizionari** o come **elementi nei set**.
 
-È possibile ordinare gli elementi di una lista in **ordine crescente o decrescente**, se gli elementi sono confrontabili (numeri, stringhe, ecc.).  
-Il metodo standard per ordinare una lista è il metodo `sort()`. 
-Esistono anche criteri personalizzabili per l’ordinamento (come la lunghezza delle stringhe o funzioni definite dall’utente, li vedremo in seguito).
+Gli oggetti immutabili in Python, come le **tuple**, le **stringhe** e i **numeri**, sono tipicamente hashable, mentre quelli mutabili, come le liste o i dizionari, non lo sono.
 
-Approfondiremo gli ordinamenti in seguito!
+> ✅ Una tupla è hashable **solo se tutti i suoi elementi sono hashable**.
 
-### 📍 Ricerca
+Questo implica che:
 
-Serve per **trovare la posizione** (indice) del primo elemento che soddisfa un determinato requisito.  
-La ricerca è fondamentale in strutture che richiedono l’identificazione della posizione, ad esempio per modifiche o accessi successivi.  
-Se l’elemento non è presente, viene solitamente sollevata un’eccezione, quindi è buona norma combinarla con l’operazione di appartenenza.
+- Se la tupla contiene solo valori immutabili e hashable (es. numeri, stringhe, altre tuple), allora la tupla stessa è hashable.
+- Se invece contiene almeno un elemento non hashable (es. liste, dizionari, set), allora non è hashable e non può essere usata come chiave o elemento di un set.
 
-### 🔢 Conteggio
+Essere hashable significa:
 
-È possibile contare **quante volte un certo valore** compare nella lista.  
-Questa operazione è molto usata in analisi statistiche, generazione di report, costruzione di frequenze e grafici, oppure per verificare la ripetizione di un certo evento.
+- Possedere un valore di hash stabile, calcolabile con `hash()`.
+- Consentire un accesso rapido in strutture dati basate su hash (dizionari, set).
+- Avere una struttura immutabile che non cambia durante l’esecuzione del programma.
 
+## 🧱 Tuple annidate
 
-### 👀 Osservazioni
+Le tuple possono contenere **altre tuple** o strutture dati nidificate al loro interno.  
+Questo permette di rappresentare dati complessi mantenendo l’immutabilità e l’ordinamento.
 
-Queste operazioni costituiscono la base per implementare algoritmi più complessi e flessibili:  
-- Le concatenazioni e ripetizioni permettono di **generare strutture su misura**.  
-- Le ricerche, verifiche e conteggi abilitano **analisi e classificazioni**.  
-- L’ordinamento è indispensabile per algoritmi di **ottimizzazione, ricerca binaria e ranking**.  
-- L’iterazione permette di costruire **trasformazioni, aggregazioni e filtri**.
+### Caratteristiche principali:
 
-## 📈 Vantaggi delle liste
+- Le tuple annidate sono utili per rappresentare **record composti**, come un insieme di informazioni correlate.
+- È possibile accedere agli elementi annidati usando più indici.
+- L’immutabilità vale per tutti i livelli della tupla annidata.
 
-- Sono **semplici da usare** e supportano una sintassi molto leggibile.
-- Permettono una **gestione dinamica** della memoria: si possono creare e modificare senza definire in anticipo la lunghezza.
-- Sono altamente **versatili** e adatte a una vasta gamma di problemi.
-- Hanno un **supporto nativo ottimizzato** all’interno del linguaggio Python.
+### Esempio tipico:
 
-## Liste Annidate
+Una tupla che contiene una tupla al suo interno può rappresentare un **record** con dati raggruppati, ad esempio una persona con nome, cognome e una tupla con anno e corso di iscrizione.
 
-## ⚠️ Attenzione ai riferimenti condivisi
+> 🧠 Le tuple annidate permettono una struttura dati compatta, chiara e immutabile.
 
-In Python, le liste sono oggetti **mutabili**. Quando assegni una lista a una nuova variabile con il simbolo `=`, **non** viene creata una nuova copia indipendente: entrambe le variabili **puntano allo stesso oggetto in memoria**. Di conseguenza, modificare la lista usando una variabile **modifica anche l'altra**, perché si sta operando sullo **stesso contenuto**.
+## ♻️ Conversione tra lista e tupla
 
-### 🔁 Esempio di riferimento condiviso
+In Python, è spesso utile convertire tra **liste** e **tuple** per sfruttare le caratteristiche di entrambi i tipi di dati.
 
-Quando si fa un'assegnazione diretta come `lista2 = lista1`, entrambi i nomi fanno riferimento alla **stessa lista** in memoria. Qualsiasi modifica a uno dei due si rifletterà sull'altro.
+### Perché convertire?
 
-### 🎯 Come evitare questo comportamento?
+- Le **liste** sono mutabili e comode per modifiche, aggiunte o rimozioni di elementi.
+- Le **tuple** sono immutabili e più sicure quando non si vuole permettere modifiche.
 
-Per ottenere una **copia indipendente**, è necessario usare una **copia esplicita**:
+### Come convertire?
 
-- **Copia superficiale (shallow copy)**: copia solo il primo livello della lista.
-  - `lista2 = lista1.copy()`
-  - `lista2 = lista1[:]`
-  - `import copy; lista2 = copy.copy(lista1)`
+- Da lista a tupla: usando la funzione `tuple()`.
+- Da tupla a lista: usando la funzione `list()`.
 
-- **Copia profonda (deep copy)**: copia anche gli oggetti annidati, a qualsiasi livello.
-  - `import copy; lista2 = copy.deepcopy(lista1)`
-
-### Quindi attenzione alle liste annidate!
-
-Se la lista contiene al suo interno altre liste o strutture complesse, una copia superficiale non basta: le sottoliste continueranno a essere condivise. In questi casi, è fondamentale usare `copy.deepcopy` per duplicare **l'intera struttura**.
-
-## 🧩 `append()` vs `extend()` vs operatore `+`
-
-### 📍 `append(elemento)`
-- Aggiunge **un singolo elemento** in coda alla lista.
-- L’elemento può essere di qualsiasi tipo (anche un’altra lista), che verrà inserita **come singolo elemento**.
-
-### 📍 `extend(iterabile)`
-- Estende la lista aggiungendo **uno per uno** tutti gli elementi della lista fornita.
-- In pratica “srotola” la lista da aggiungere, inserendo i suoi elementi singolarmente.
-
-### 📍 Operatore `+`
-- Crea una **nuova lista** concatenando le due liste.
-- Non modifica le liste originali, ma restituisce una nuova lista risultante dalla somma degli elementi di entrambe.
-
----
-
-### 📌 Differenze principali:
-
-| Metodo/Operatore | Modifica la lista originale? | Tipo di aggiunta                  | Restituisce nuova lista? |
-|------------------|------------------------------|---------------------------------|-------------------------|
-| `append()`       | Sì                           | Un singolo elemento (anche lista come elemento singolo) | No                      |
-| `extend()`       | Sì                           | Tutti gli elementi di un iterabile, uno per uno         | No                      |
-| `+`              | No                           | Nuova lista, concatenazione di due liste                 | Sì                      |
-
-## Ordinamento con `sort()` e `sorted()`
-
-In Python esistono due modi principali per ordinare una lista:
-
-- **`list.sort()`**: è un metodo che ordina la lista **in-place**, cioè modifica direttamente la lista originale senza crearne una nuova.  
-  Questo significa che non restituisce nulla (`None`), ma cambia l’ordine degli elementi della lista su cui viene chiamato.
-
-- **`sorted()`**: è una funzione built-in che prende un iterabile (come una lista) e **restituisce una nuova lista ordinata**, lasciando intatto l’originale.  
-  È utile quando si vuole mantenere la lista originale invariata e ottenere una copia ordinata.
-
-### Differenze principali:
-
-| Caratteristica          | `list.sort()`                   | `sorted()`                      |
-|------------------------|--------------------------------|--------------------------------|
-| Modifica la lista       | Sì (in-place)                  | No                             |
-| Restituisce             | `None`                        | Nuova lista ordinata            |
-| Può ordinare qualsiasi iterabile | No, solo liste               | Sì, qualsiasi iterabile         |
-| Uso comune              | Quando si vuole modificare la lista originale | Quando serve una copia ordinata senza modificare l’originale |
-
-Entrambi accettano parametri opzionali molto utili:
-
-- `key=`: funzione per estrarre una chiave di ordinamento da ogni elemento (ad esempio, ordinare per lunghezza di una stringa o per un attributo di un oggetto).
-- `reverse=True`: per invertire l’ordinamento, ottenendo una lista ordinata in ordine decrescente.
-
-⚠️ **Consiglio pratico:**  
-Usa `sort()` quando vuoi ordinare e basta, senza necessità di mantenere la lista originale.  
-Usa `sorted()` quando hai bisogno di conservare la lista originale o quando vuoi ordinare tipi diversi da liste.
-
-## 🔄 Casting a lista da stringa
-
-Spesso può essere utile **convertire una stringa in una lista** di caratteri.  
-In Python, questo si ottiene facilmente usando la funzione `list()` applicata a una stringa:
-
-Ogni carattere della stringa diventa un elemento della lista, mantenendo l’ordine originale.
-Questa operazione è utile quando si vogliono manipolare singoli caratteri, ad esempio per filtri, modifiche o analisi.
-
-⚠️ Nota: il casting con list() da stringa crea una lista di singoli caratteri, non di parole.
-Per ottenere una lista di parole da una frase, è meglio usare il metodo `.split()`.
-
-## 🧹 Metodo clear()
-
-Il metodo `clear()` permette di svuotare completamente una lista, rimuovendo tutti gli elementi in modo efficiente.
-La lista rimane presente, ma diventa vuota.
-
-⚠️ Ricorda che `clear()` modifica la lista originale in-place e non restituisce nulla (None).
+> 🔄 La conversione crea una nuova struttura dati, lasciando invariata quella originale.z
 
 ## 🔚 Conclusioni
 
-Le **liste** sono una struttura dati fondamentale in Python, grazie alla loro flessibilità, mutabilità e facilità d'uso.  
-In questo capitolo abbiamo visto:
+Le **tuple** sono una struttura dati estremamente utile e versatile in Python, soprattutto quando si ha bisogno di una collezione **immutabile** e **ordinata** di elementi.  
+La loro immutabilità le rende ideali per rappresentare dati **costanti**, sicuri da modifiche accidentali, e permette di utilizzarle come **chiavi nei dizionari** o come **elementi nei set** grazie alla loro proprietà di essere **hashable** (purché tutti gli elementi contenuti siano a loro volta hashable).
 
-- La definizione di lista come collezione ordinata, indicizzata e mutabile.
-- Come accedere agli elementi tramite indicizzazione e slicing.
-- Le operazioni di modifica, aggiunta, inserimento e rimozione di elementi.
-- La differenza tra metodi `append()`, `extend()` e l’operatore `+`.
-- L’importanza di comprendere i riferimenti condivisi e come fare copie superficiali o profonde.
-- Le principali operazioni comuni come concatenazione, ripetizione, ricerca, conteggio e ordinamento.
-- Il casting da stringa a lista e il metodo `clear()` per svuotare le liste.
+| Caratteristica         | Tuple                                 | Liste                               |
+|-----------------------|-------------------------------------|-----------------------------------|
+| Mutabilità            | 🚫 Immutabili                        | ✅ Mutabili                       |
+| Sintassi              | `(1, 2, 3)` oppure `1, 2, 3`        | `[1, 2, 3]`                       |
+| Metodi disponibili    | Solo `.count()`, `.index()`          | Molti: `.append()`, `.remove()`, `.sort()`, ecc. |
+| Hashable              | ✅ Solo se tutti gli elementi sono hashable | 🚫 Non hashable                   |
+| Performance           | Più veloci e meno spazio in memoria | Leggermente più lente             |
+| Uso tipico            | Dati costanti, chiavi dizionario, valori di ritorno multipli | Collezioni modificabili, manipolazioni dati |
+| Conversione           | Puoi convertirle in liste con `list()` | Puoi convertirle in tuple con `tuple()` |
 
-Conoscere bene le liste e il loro comportamento è essenziale per scrivere codice Python efficace e performante, e costituisce la base per affrontare strutture dati più complesse e algoritmi avanzati.
+Quindi, usa le **tuple** quando vuoi:
 
-Nel prossimo capitolo approfondiremo le **tuple** e vedremo come si differenziano dalle liste, in particolare in termini di immutabilità e prestazioni.
+- Salvaguardare dati che non devono cambiare.
+- Usare sequenze come chiavi di dizionari o elementi di set.
+- Avere un contenitore più leggero e performante rispetto alla lista.
+
+Per tutto il resto, dove serve modificare, aggiungere o rimuovere elementi, le **liste** rimangono la scelta migliore.
+
+✨ Comprendere le differenze tra tuple e liste e saperle usare in modo appropriato è una competenza chiave per scrivere codice Python più robusto, leggibile e performante.
 
