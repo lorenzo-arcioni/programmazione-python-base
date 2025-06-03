@@ -79,6 +79,28 @@ Ci sono vari metodi per rimuovere dati:
 Aggiorna il dizionario con chiavi e valori presi da un altro dizionario o da un iterable di coppie `(chiave, valore)`.  
 Le chiavi esistenti vengono sovrascritte, quelle nuove aggiunte.
 
+### 🧳 Unpacking e Packing dei Dizionari
+
+In Python, il concetto di *packing* e *unpacking* applicato ai dizionari consente una gestione più flessibile e dinamica dei dati.
+
+#### 🔹 Packing (Impacchettamento)
+
+Il packing consiste nel creare un dizionario combinando più coppie chiave-valore in un'unica struttura. È utile quando si vogliono aggregare dati provenienti da più sorgenti. Le chiavi devono essere uniche; in caso di conflitto, prevale l’ultima definita.
+
+Questo approccio è particolarmente utile per costruire dizionari in modo dinamico, passando valori da altre strutture dati o funzioni.
+
+#### 🔹 Unpacking (Scompattamento)
+
+L’unpacking permette di estrarre le coppie chiave-valore da un dizionario esistente per inserirle in un altro contesto, come un altro dizionario o come argomenti di una funzione.
+
+È anche usato per unire più dizionari tra loro, semplificando l'integrazione di dati. L’unpacking mantiene l’ordine di inserimento (da Python 3.7 in poi) e consente la sovrascrittura di chiavi duplicate.
+
+#### ℹ️ Considerazioni
+
+- L’unpacking rende il codice più leggibile ed elegante, soprattutto quando si lavora con configurazioni, parametri o dati aggregati.
+- È importante assicurarsi che le chiavi siano compatibili e che non vi siano conflitti indesiderati.
+- Il packing e l’unpacking si basano su una sintassi specifica (`**`) che indica a Python di trattare le coppie come elementi distinti da inserire o estrarre.
+
 ### 🔹 Svuotare completamente il dizionario
 
 ## 🛠️ Metodi Utili dei Dizionari
