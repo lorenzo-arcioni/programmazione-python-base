@@ -1,0 +1,13 @@
+{
+    "nome": "Marco",
+    "eta": 28,
+    "interessi": [
+        "calcio",
+        "musica",
+        "programmazione"
+    ],
+    "indirizzo": {
+        "citta": "Roma",
+        "cap": "00100"
+    }
+}

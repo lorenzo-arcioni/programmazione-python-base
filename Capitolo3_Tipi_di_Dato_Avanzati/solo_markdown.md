@@ -1,169 +1,70 @@
-# 🔐 Tuple
+# 🧠 Dizionari in Python: Guida Completa
 
-Le **tuple** sono una struttura dati fondamentale in Python, utilizzata per rappresentare collezioni **ordinate** e **immutabili** di elementi.  
-Sono strettamente imparentate con le **liste**, ma con una caratteristica chiave: **non possono essere modificate dopo la creazione**.
+I **dizionari** (`dict`) sono una delle strutture dati più potenti e versatili in Python.  
+Sono utilizzati per rappresentare **collezioni di coppie chiave-valore**, dove ogni chiave è un identificatore unico che punta a un valore associato.
 
-Comprendere le tuple è essenziale, non solo per memorizzare dati fissi, ma anche per strutturare valori che non devono cambiare accidentalmente.  
-Sono spesso utilizzate per rappresentare:
+🔑 I dizionari sono ideali per modellare:
 
-- **Coordinate** (es. posizione in uno spazio 2D o 3D),
-- **Valori multipli di ritorno da una funzione**,
-- **Record immutabili** (es. dati anagrafici non modificabili),
+- Oggetti reali (es. un utente con nome, età, email)
+- Tabelle di lookup (es. conversioni tra codici e significati)
+- Configurazioni di sistema o parametri di un programma
+- Contatori e frequenze (es. conteggio parole in un testo)
+- Strutture annidate come JSON
 
-## 📚 Definizione generale
+Utilizzando i dizionari, è possibile ottenere un accesso diretto ai dati tramite una chiave, evitando la necessità di scorrere l’intera collezione.
 
-Una **tupla** è una collezione:
+⚡ Sono inoltre estremamente efficienti in termini di prestazioni: l’accesso, l’inserimento e la cancellazione di un elemento avvengono mediamente in tempo **costante** (`O(1)`), grazie all’uso di una **hash table**.
 
-- ✅ Ordinata: gli elementi vengono mantenuti nell’ordine in cui sono stati definiti;
-- ✅ Indicizzata: è possibile accedere agli elementi tramite l’indice (es. `tupla[0]`);
-- 🚫 Immutabile: una volta creata, **non è possibile aggiungere, rimuovere o modificare** gli elementi;
-- ✅ Permette duplicati: possono comparire più volte gli stessi valori;
-- ✅ Eterogenea: può contenere oggetti di tipo diverso (interi, stringhe, liste, altre tuple…).
+## 📌 1. Definizione e Sintassi
 
+Un dizionario in Python è:
 
-> ✨ Questo rende le tuple **più sicure**, **più veloci**, e adatte a rappresentare **dati costanti**, come le coordinate di un punto, parametri fissi, o record che non devono cambiare.
+- **Mutabile**: può essere modificato dopo la creazione (aggiunta, modifica o rimozione di elementi).
+- **Indicizzato tramite chiavi**: al posto degli indici numerici delle liste, si usano chiavi definite dall’utente.
+- **Non ordinato** (fino a Python 3.6): l’ordine degli elementi non era garantito.
+- **Ordinato** (da Python 3.7 in poi): mantiene l’ordine di inserimento.
+- **Chiavi univoche**: ogni chiave deve essere unica nel dizionario; i valori, invece, possono ripetersi.
 
-## 🧪 Esempio base
+📘 Le chiavi devono essere di tipo **hashable** (immutabili), come `str`, `int`, `float`, `tuple` (contenente solo elementi immutabili), mentre i valori possono essere di qualsiasi tipo (inclusi altri dizionari).
 
-Ecco come si definisce e si utilizza una tupla in Python:
+### 🔹 Sintassi base
 
-📌 Nota: anche se le parentesi tonde `()` sono il modo più comune per definire una tupla, **Python riconosce una tupla anche senza parentesi**, se gli elementi sono separati da virgole:
+### 🔹 Creazione con `dict()`
 
-Approfondiremo questo concetto tra poco!
+## 🔍 3. Accesso ai dati e Modifica dei valori nei dizionari
 
-Attenzione alla sintassi: una tupla con un solo elemento richiede la virgola finale!
+I dizionari utilizzano le **chiavi (keys)** per accedere ai **valori (values)**. Esistono vari modi per accedere, modificare o aggiungere coppie chiave-valore.
 
-🧠 È una trappola comune: la virgola è ciò che definisce una tupla, non le parentesi.
+### 🔹 Accesso diretto con l'operatore `[]`
 
-## 🔢 Indicizzazione e slicing
+Utilizza la sintassi `dizionario[chiave]` per accedere al valore associato a una chiave. Se la chiave non esiste, Python solleverà un `KeyError`.
 
-Le tuple supportano le stesse tecniche di accesso tramite indice e slicing viste per liste e stringhe:
+### 🔹 Accesso sicuro con `.get()`
 
-## ♻️ Immutabilità
+Il metodo `.get()` consente di accedere a una chiave senza rischiare un `KeyError`. Se la chiave non è presente, restituisce `None` (o un valore di default specificato).
 
-La differenza fondamentale tra tuple e liste è proprio questa: le tuple non possono essere modificate.
 
-## 📦 Packing e unpacking
+### 🔹 Aggiunta o Modifica di coppie chiave-valore
 
-Python permette di **"impacchettare" (packing)** valori in una tupla e **"spacchettarli" (unpacking)** facilmente, rendendo il codice più leggibile e conciso.
+Se assegni un valore a una chiave già esistente, il valore viene sovrascritto. Se la chiave non esiste, viene creata.
 
-### 📦 Packing (impacchettamento)
+## ✏️ 4. Aggiunta, Rimozione e Svuotamento del dizionario
 
-Il *packing* consiste nel **creare una tupla** a partire da più valori:
+### 🔹 Aggiungere una nuova coppia
 
-📌 Anche se non usi le parentesi tonde, Python interpreta la virgola come creazione di una tupla.
+Assegna un valore a una nuova chiave come nel caso della modifica:
 
-### 🧯 Unpacking (spacchettamento)
+### 🔹 Rimuovere coppie dal dizionario
 
-L’unpacking consiste nell’**assegnare gli elementi della tupla a variabili distinte**:
+Ci sono vari metodi per rimuovere dati:
 
-⚠️ Il numero di variabili a sinistra deve **corrispondere** al numero di elementi nella tupla, altrimenti si genera un errore.
+📌 **Quando usarli:**
 
-### 🪄 Unpacking con l'operatore `*`
+- Usa del se vuoi semplicemente rimuovere una chiave senza interesse per il suo valore.
+- Usa pop() se vuoi anche ottenere il valore rimosso.
+- Usa popitem() per rimuovere elementi in modo Last-In-First-Out, utile ad esempio per strutture tipo stack.
 
-Puoi usare l’operatore `*` per catturare più elementi in una lista:
+⚠️ Se `del` o `pop` viene usato con una chiave inesistente, viene sollevato un `KeyError`.
 
-> ✨ L’unpacking è molto usato nelle funzioni, nei cicli e per scrivere codice elegante e chiaro.
-
-## 🔍 Operazioni disponibili sulle tuple
-
-Sebbene le tuple siano **immutabili**, possiamo comunque svolgere diverse operazioni utili su di esse:
-
-### 📏 Lunghezza con `len()`
-
-### 🔍 Accesso agli elementi tramite indice
-
-### 🧪 Appartenenza con `in`
-
-### ➕ Concatenazione
-
-### 🔁 Ripetizione
-
-## 🛠️ Tutti i metodi disponibili per le tuple
-
-Le tuple supportano **solo due metodi integrati**:
-
-- `.count(x)` → Conta quante volte `x` appare nella tupla.
-- `.index(x)` → Restituisce l’indice della **prima occorrenza** di `x`.
-
-> ⚠️ Al contrario delle liste, **non** puoi usare metodi come `.append()`, `.remove()` o `.sort()` perché modificherebbero la struttura.
-
-## 🧠 Tuple sono hashable
-
-Un oggetto si dice **hashable** quando possiede una caratteristica molto importante: **il suo valore non cambia durante la sua vita**, e quindi può essere associato a un codice numerico fisso chiamato **hash**.
-
-Le **tuple sono oggetti hashable**, il che significa che possono essere utilizzate come **chiavi nei dizionari** o come **elementi nei set**.
-
-Gli oggetti immutabili in Python, come le **tuple**, le **stringhe** e i **numeri**, sono tipicamente hashable, mentre quelli mutabili, come le liste o i dizionari, non lo sono.
-
-> ✅ Una tupla è hashable **solo se tutti i suoi elementi sono hashable**.
-
-Questo implica che:
-
-- Se la tupla contiene solo valori immutabili e hashable (es. numeri, stringhe, altre tuple), allora la tupla stessa è hashable.
-- Se invece contiene almeno un elemento non hashable (es. liste, dizionari, set), allora non è hashable e non può essere usata come chiave o elemento di un set.
-
-Essere hashable significa:
-
-- Possedere un valore di hash stabile, calcolabile con `hash()`.
-- Consentire un accesso rapido in strutture dati basate su hash (dizionari, set).
-- Avere una struttura immutabile che non cambia durante l’esecuzione del programma.
-
-## 🧱 Tuple annidate
-
-Le tuple possono contenere **altre tuple** o strutture dati nidificate al loro interno.  
-Questo permette di rappresentare dati complessi mantenendo l’immutabilità e l’ordinamento.
-
-### Caratteristiche principali:
-
-- Le tuple annidate sono utili per rappresentare **record composti**, come un insieme di informazioni correlate.
-- È possibile accedere agli elementi annidati usando più indici.
-- L’immutabilità vale per tutti i livelli della tupla annidata.
-
-### Esempio tipico:
-
-Una tupla che contiene una tupla al suo interno può rappresentare un **record** con dati raggruppati, ad esempio una persona con nome, cognome e una tupla con anno e corso di iscrizione.
-
-> 🧠 Le tuple annidate permettono una struttura dati compatta, chiara e immutabile.
-
-## ♻️ Conversione tra lista e tupla
-
-In Python, è spesso utile convertire tra **liste** e **tuple** per sfruttare le caratteristiche di entrambi i tipi di dati.
-
-### Perché convertire?
-
-- Le **liste** sono mutabili e comode per modifiche, aggiunte o rimozioni di elementi.
-- Le **tuple** sono immutabili e più sicure quando non si vuole permettere modifiche.
-
-### Come convertire?
-
-- Da lista a tupla: usando la funzione `tuple()`.
-- Da tupla a lista: usando la funzione `list()`.
-
-> 🔄 La conversione crea una nuova struttura dati, lasciando invariata quella originale.z
-
-## 🔚 Conclusioni
-
-Le **tuple** sono una struttura dati estremamente utile e versatile in Python, soprattutto quando si ha bisogno di una collezione **immutabile** e **ordinata** di elementi.  
-La loro immutabilità le rende ideali per rappresentare dati **costanti**, sicuri da modifiche accidentali, e permette di utilizzarle come **chiavi nei dizionari** o come **elementi nei set** grazie alla loro proprietà di essere **hashable** (purché tutti gli elementi contenuti siano a loro volta hashable).
-
-| Caratteristica         | Tuple                                 | Liste                               |
-|-----------------------|-------------------------------------|-----------------------------------|
-| Mutabilità            | 🚫 Immutabili                        | ✅ Mutabili                       |
-| Sintassi              | `(1, 2, 3)` oppure `1, 2, 3`        | `[1, 2, 3]`                       |
-| Metodi disponibili    | Solo `.count()`, `.index()`          | Molti: `.append()`, `.remove()`, `.sort()`, ecc. |
-| Hashable              | ✅ Solo se tutti gli elementi sono hashable | 🚫 Non hashable                   |
-| Performance           | Più veloci e meno spazio in memoria | Leggermente più lente             |
-| Uso tipico            | Dati costanti, chiavi dizionario, valori di ritorno multipli | Collezioni modificabili, manipolazioni dati |
-| Conversione           | Puoi convertirle in liste con `list()` | Puoi convertirle in tuple con `tuple()` |
-
-Quindi, usa le **tuple** quando vuoi:
-
-- Salvaguardare dati che non devono cambiare.
-- Usare sequenze come chiavi di dizionari o elementi di set.
-- Avere un contenitore più leggero e performante rispetto alla lista.
-
-Per tutto il resto, dove serve modificare, aggiungere o rimuovere elementi, le **liste** rimangono la scelta migliore.
-
-✨ Comprendere le differenze tra tuple e liste e saperle usare in modo appropriato è una competenza chiave per scrivere codice Python più robusto, leggibile e performante.
+### 🔹 Svuotare completamente il dizionario
 
