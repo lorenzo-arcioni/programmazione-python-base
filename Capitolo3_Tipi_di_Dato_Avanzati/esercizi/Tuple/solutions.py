@@ -1,5 +1,5 @@
 # Esercizio 1: Crea una tupla mista con elementi di diversi tipi
-# Crea una tupla che contenga: un numero intero, una stringa, un booleano, None
+# Crea una tupla che contenga: un numero intero, una stringa, un booleano, None: 41, "ciao", True, None
 tupla_mista = (42, "ciao", True, None)
 
 # Esercizio 2: Accesso tramite indicizzazione positiva e negativa

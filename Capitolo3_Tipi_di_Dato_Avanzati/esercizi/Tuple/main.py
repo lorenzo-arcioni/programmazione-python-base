@@ -1,6 +1,6 @@
 # Esercizio 1: Crea una tupla mista con elementi di diversi tipi
 
-# Crea una tupla che contenga: un numero intero, una stringa, un booleano, None
+# Crea una tupla che contenga: un numero intero, una stringa, un booleano, None: 41, "ciao", True, None
 tupla_mista = ...
 
 # Esercizio 2: Accesso tramite indicizzazione positiva e negativa
@@ -27,14 +27,15 @@ persona = ...
 
 coordinate = (10, 20)
 # Usa l'unpacking per assegnare x e y
-x, y = ...
+... = coordinate
 
 # Esercizio 6: Unpacking con operatore * (asterisco)
 
 valori = (1, 2, 3, 4, 5, 6)
 # Usa l'unpacking per assegnare il primo elemento a 'primo', l'ultimo a 'ultimo', 
 # e tutti quelli in mezzo alla lista 'mezzo'
-primo, *mezzo, ultimo = ...
+# I nomi delle variabili devono essere: primo, mezzo e utlimo
+... = valori
 
 # Esercizio 7: Tupla con un solo elemento (attenzione alla virgola!)
 
@@ -105,7 +106,11 @@ punto_3d = ...
 
 dati_persona = ("Alice", "Bianchi", (1995, "Milano"), ("Ingegnere", 50000))
 # Usa l'unpacking per estrarre: nome, cognome, anno di nascita, città, professione, stipendio
-nome_18, cognome_18, (anno_nascita, citta), (professione, stipendio) = ...
+# I nomi delle variabili devono essere:
+#    nome_18, cognome_18, anno_nascita, citta, professione, stipendio
+# E (anno_nascita, citta) sono una tupla annidata
+# E (professione, stipendio) sono una tupla annidata
+... = dati_persona
 
 # Esercizio 19: Verifica se una tupla è hashable (può essere usata come chiave)
 
