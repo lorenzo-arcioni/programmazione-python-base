@@ -199,6 +199,103 @@ Tutti gli altri valori (del tipo di quelli in tabella) → `True`.
 
 Esempio:
 
+## 🧩 If annidati (Nested if)
+
+Un **if annidato** è un costrutto in cui una struttura `if` è contenuta **all'interno** di un'altra struttura `if`.
+
+Questa tecnica permette di esprimere **decisioni complesse** che dipendono da **più livelli di condizioni**, dove ogni livello successivo viene valutato **solo se il precedente è verificato**.
+
+### 📌 Quando usare gli `if` annidati
+
+- Quando hai bisogno di verificare **più condizioni correlate tra loro**.
+- Quando una condizione **ha senso solo nel contesto** di un'altra.
+- Quando vuoi scrivere codice che **rispecchi una logica gerarchica** (es. accesso utente ➝ verifica permessi ➝ azioni disponibili).
+
+### 🧠 Attenzione a:
+- L’**indentazione**: ogni blocco annidato deve essere ben indentato per evitare errori o comportamenti inaspettati.
+- La **leggibilità**: troppi livelli di annidamento rendono il codice difficile da leggere. Se noti questo problema, valuta di ristrutturare usando funzioni o altre strategie (es. `match-case`, dizionari, return anticipati).
+
+## 🧭 Il costrutto `match-case` (introdotto in Python 3.10)
+
+A partire da Python 3.10 è stato introdotto un nuovo costrutto chiamato `match-case`, simile al `switch` presente in altri linguaggi.
+
+Questo costrutto permette di **semplificare il controllo di flusso** in presenza di **numerose condizioni alternative**, mantenendo il codice ordinato e leggibile.
+
+### 🧩 A cosa serve `match-case`?
+
+- Gestire condizioni **mutualmente esclusive** in modo chiaro.
+- Evitare lunghe catene di `if-elif-else`.
+- Rendere il codice più leggibile e **simile al linguaggio naturale**.
+- Permettere il **pattern matching strutturale**: confrontare non solo valori semplici, ma anche **strutture complesse**, come tuple, liste, dizionari o oggetti.
+
+### 📌 Quando preferire `match-case` agli `if`?
+
+- Quando hai una **singola variabile** da confrontare con **diversi possibili valori**.
+- Quando vuoi **sfruttare il pattern matching** avanzato.
+- Quando desideri **rendere più espressivo** e mantenibile il codice.
+
+> ⚠️ Nota: `match-case` richiede **Python 3.10 o superiore**. Assicurati che l’ambiente in cui esegui il codice sia compatibile.
+
+## ✅ Best Practices con le Decisioni
+
+Scrivere decisioni in modo corretto e leggibile è fondamentale per la qualità del codice. Ecco alcune **buone pratiche (best practices)** da seguire quando si usano `if`, `elif`, ed `else`.
+
+### 🔍 Chiarezza prima di tutto
+
+- Scrivi condizioni **semplici e leggibili**. Se la condizione è troppo lunga o complessa, considera di **scomporla** in più variabili.
+- Usa **nomi di variabili descrittivi** per rendere il codice autoesplicativo.
+
+### 🚫 Evita errori comuni
+
+- Non usare `== True` o `== False` inutilmente: preferisci `if condizione:` invece di `if condizione == True`.
+- Non confondere `=` (assegnamento) con `==` (confronto).
+- Non dimenticare i `:` dopo ogni `if`, `elif`, `else`.
+
+### 🧹 Organizza il codice in modo chiaro
+
+- Usa le **funzioni** per separare blocchi decisionali complessi.
+- Evita troppi `elif`: valuta alternative come `match-case`, dizionari o return anticipati.
+
+### 🧠 Scrivi condizioni "positive"
+
+- Preferisci condizioni **positive**: sono più facili da capire rispetto a `not` combinati.
+  - ✅ `if is_valid:`
+  - ❌ `if not is_invalid:`
+
+È buona norma anche semplificare, dove possibile, le condizioni booleane. Ad esempio:
+
+Ok, ma come si fa?
+
+### 🧮 Semplificazione di una formula booleana complessa
+
+Supponiamo di partire dalla seguente condizione logica:
+
+$$
+(\lnot A \land \lnot B) \lor (\lnot A \land B)
+$$
+
+Fattorizziamo $\lnot A$ (distributiva inversa):
+
+$$
+= \lnot A \land (\lnot B \lor B)
+$$
+
+Poiché $(\lnot B \lor B)$ è sempre vera (tautologia):
+
+$$
+= \lnot A \land \text{True}
+$$
+
+Qualsiasi cosa "AND" `True` restituisce sé stessa:
+
+$$
+= \lnot A
+$$
+
+✅ **Conclusione**: la formula booleana originale può essere riscritta in modo molto più semplice come:
+
+## 🎓 Esempi pratici e casi d’uso comuni
+
 ## ✅ Conclusioni
 
 In questo notebook abbiamo approfondito il meccanismo delle **decisioni condizionali** in Python, pilastro fondamentale del control flow.
