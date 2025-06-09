@@ -78,7 +78,7 @@ tutti_prezzi = ...  # ottieni tutti i valori (convertili in lista)
 # Esercizio 14: Ottenere le coppie con items()
 
 voti_materie = {"matematica": 8, "fisica": 7, "informatica": 9}
-coppie_voti = ...  # ottieni tutte le coppie (chiave, valore) come lista
+coppie_voti = ...  # ottieni tutte le coppie (chiave, valore) come lista di tuple
 
 # Esercizio 15: Copia superficiale con copy()
 

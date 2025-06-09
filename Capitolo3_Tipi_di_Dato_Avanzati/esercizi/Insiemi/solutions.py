@@ -1,5 +1,9 @@
 # Esercizio 1: Crea un set misto con elementi di diversi tipi
-# Crea un set che contenga: un numero intero, una stringa, un booleano, None
+# Crea un set che contenga: 
+# - numero 42
+# - stringa "ciao"
+# - booleano True
+# - None
 set_misto = {42, "ciao", True, None}
 
 # Esercizio 2: Conversione da lista a set per rimuovere duplicati
